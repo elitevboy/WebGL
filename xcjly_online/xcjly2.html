@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>辉途致信行车记录仪</title>
+		<link href="css/xcjly2.css" rel="stylesheet" />
+		<meta charset="utf-8">
+        <link rel="shortcut icon" href="img/icon/bmw.ico">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	</head>
+	<body>
+        <section class="content">
+            <div id="photo1">
+                <img id="img1"  src="img/xcjly1.png" alt="行车记录仪1" />
+            </div>
+            <div id="my_viewport"></div>
+            <div id="photo2">
+                <img id="img2" src="img/xcjly2.png" alt="行车记录仪2" />
+            </div>
+        </section>
+        <script type="x-shader/x-vertex" id="vertexShader">
+			varying vec3 vWorldPosition;
+			void main() {
+				vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+				vWorldPosition = worldPosition.xyz;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+			}
+		</script>
+		<script type="x-shader/x-fragment" id="fragmentShader">
+			uniform vec3 topColor;
+			uniform vec3 bottomColor;
+			uniform float offset;
+			uniform float exponent;
+			varying vec3 vWorldPosition;
+			void main() {
+				float h = normalize( vWorldPosition + offset ).y;
+				gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h, 0.0 ), exponent ), 0.0 ) ), 1.0 );
+			}
+		</script>
+        <script src="js/xcjly22m.js"></script>
+	</body>
+</html>
