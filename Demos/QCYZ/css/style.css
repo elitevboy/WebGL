@@ -1,0 +1,535 @@
+﻿body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%
+}
+article,aside,dialog,figure,footer,header,menu,nav,section {
+	margin: 0;
+	padding: 0;
+	display: block
+}
+blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,li,ol,p,pre,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+fieldset,img {
+	border: 0
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: 400
+}
+ol,ul {
+	list-style: none
+}
+del,ins {
+	text-decoration: none
+}
+caption,th {
+	text-align: left
+}
+button,input,select,textarea {
+	font-size: 100%;
+	border: none;
+	outline: 0
+}
+q:after,q:before {
+	content: ''
+}
+acronym,addr {
+	border: 0;
+	font-variant: normal
+}
+sub,sup {
+	vertical-align: baseline
+}
+body {
+	color: #030000
+}
+a {
+	text-decoration: none;
+	color: #666
+}
+body,html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden
+}
+.app,.canvas,.container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden
+}
+.container {
+	visibility: hidden
+}
+.canvas {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0
+}
+.canvas canvas {
+	background-position: center;
+	background-size: cover
+}
+.canvas canvas.viewer-canvas {
+	height: 100%!important;
+	width: 100%!important
+}
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2
+}
+.icon-base64 {
+	display: inline-block;
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center
+}
+[class*=btn-] {
+	cursor: pointer
+}
+.thumbtack {
+	position: absolute;
+	z-index: 3;
+	visibility: visible
+}
+.thumbtack ul {
+	position: relative;
+	width: 100%;
+	height: 100%
+}
+.thumbtack li {
+	position: absolute
+}
+.thumbtack li .tag {
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	opacity: .5;
+	margin: -15px;
+	border-radius: 15px;
+	text-align: center;
+	border: 1px solid #888;
+	background: #bbb;
+	position: absolute;
+	cursor: pointer
+}
+.thumbtack li .tag.show {
+	border: 1px solid #666;
+	background-color: #fff
+}
+.thumbtack li .tag:hover {
+	border: 1px solid #666;
+	background-color: #fff
+}
+.thumbtack li .tag:hover+.description {
+	display: block
+}
+.thumbtack li .description {
+	display: none;
+	margin: -12px 0 0 25px;
+	padding: 5px 10px;
+	border-radius: 2px;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #fff;
+	background-color: rgba(17,17,17,.7);
+	position: absolute;
+	width: 210px;
+	height: 150px
+}
+.thumbtack li .description.show {
+	display: block
+}
+.thumbtack li .description:before {
+	position: absolute;
+	content: "";
+	left: -6px;
+	top: 6px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-right: 6px solid rgba(17,17,17,.7);
+	border-bottom: 6px solid transparent
+}
+.thumbtack li .description>.title {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	height: 24px;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+	font-size: 16px
+}
+.thumbtack li .description>.content {
+	word-wrap: break-word;
+	word-break: break-all;
+	height: 80px;
+	width: 100%;
+	overflow-y: scroll;
+	font-size: 14px;
+	box-shadow: 0 0 2px 1px inset #555
+}
+.carousel {
+	display: none;
+	z-index: 4;
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 320px;
+	height: 60px;
+	visibility: visible
+}
+.carousel span {
+	display: block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center
+}
+.carousel span svg {
+	display: inline-block;
+	vertical-align: middle
+}
+.carousel .btn-left {
+	float: left
+}
+.carousel .btn-right {
+	float: right
+}
+.carousel .carousel-title {
+	height: 60px;
+	overflow: hidden;
+	background-color: rgba(221,221,221,.7);
+	border-radius: 4px;
+	text-align: center
+}
+.carousel .carousel-title p {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.4em;
+	font-size: 14px;
+	width: 90%;
+	max-height: 36px;
+	overflow: hidden
+}
+.carousel .carousel-title em {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle
+}
+.props-icon-box {
+	z-index: 5;
+	position: absolute;
+	bottom: 32px;
+	right: 24px;
+	visibility: visible;
+    display:none;
+}
+.props-icon-box>ul {
+	width: 100%;
+	height: auto
+}
+.props-icon-box>ul>li {
+	float: left;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	margin-left: 20px
+}
+.props-icon-box>ul>li:hover .btn-tips {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1)
+}
+.props-icon-box .btn-tips {
+	display: block;
+	width: 50px;
+	position: absolute;
+	top: -36px;
+	left: -10px;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	background-color: rgba(60,60,60,.9);
+	border-radius: 2px;
+	font-size: 14px;
+	text-align: center;
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	transition: opacity .5s
+}
+.props-icon-box .help-box {
+	width: auto;
+	height: auto;
+	top: -152px;
+	left: -115px
+}
+.props-icon-box .help-box .help-content {
+	width: 260px;
+	padding: 20px 0 10px;
+	font-size: 12px
+}
+.props-icon-box .help-box .help-content>li {
+	float: left;
+	width: 33.333%
+}
+.props-icon-box .help-box .help-content>li>p {
+	height: 33px
+}
+.props-icon-box .help-box .help-content>li>p:last-child {
+	line-height: 20px;
+	height: 20px
+}
+.props-icon-box .help-box .help-content>li .icon {
+	fill: #fff
+}
+.props-icon-box .help-box .help-content>li .icon-one {
+	width: 30px;
+	height: 30px
+}
+.props-icon-box .help-box .help-content>li .icon-two {
+	width: 28px;
+	height: 28px
+}
+.props-icon-box .help-box .help-content:after {
+	content: "@ Powered by Shinemi.";
+	display: block;
+	clear: both;
+	opacity: .15;
+	text-align: right;
+	padding-right: 10px
+}
+.props-icon-box .rendering-box {
+	top: -110px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	padding: 5px 0;
+	height: auto
+}
+.props-icon-box .rendering-box li.active,.props-icon-box .rendering-box li:hover {
+	background: rgba(255,255,255,.1)
+}
+.props-icon-box .vr_tips_box {
+	display: none;
+	position: absolute;
+	top: -52px;
+	left: -60px;
+	width: 140px;
+	height: 48px;
+	border-radius: 3px;
+	background-color: rgba(200,200,200,.9)
+}
+.props-icon-box .vr_tips_box p {
+	font-size: 12px;
+	padding: .375rem .5rem;
+	line-height: 1.5
+}
+.props-icon-box .vr_tips_box p a {
+	color: #00acc1
+}
+.props-icon-box .btn-full,.props-icon-box .btn-help,.props-icon-box .btn-mode,.props-icon-box .btn-vr {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: right
+}
+.props-icon-box .btn-full svg,.props-icon-box .btn-help svg,.props-icon-box .btn-mode svg,.props-icon-box .btn-vr svg {
+	fill: #ccc
+}
+.props-icon-box .btn-full:hover,.props-icon-box .btn-help:hover,.props-icon-box .btn-mode:hover,.props-icon-box .btn-vr:hover {
+	background-color: rgba(255,255,255,.2)
+}
+.props-icon-box .btn-full,.props-icon-box .btn-help,.props-icon-box .btn-vr {
+	padding-top: 4px;
+	box-sizing: border-box
+}
+.props-icon-box .icon-vr {
+	width: 20px;
+	height: 20px
+}
+.props-icon-box .icon-full {
+	width: 14px;
+	height: 20px
+}
+.progress {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+	z-index: 1000;
+	background-position: center;
+	background-size: cover
+}
+.progress-box {
+	position: absolute;
+	width: 60%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center
+}
+/*加载进度条*/
+.progress-box .logo {
+	margin-bottom: 10px
+}
+.progress-bar {
+	height: 5px;
+	width: 100%;
+	background-color: #aaa;
+	border-radius: 5px
+}
+.progress-bar span {
+	display: block;
+	height: inherit;
+	border-radius: 5px;
+	background-color: #00ff00  /*#00b0ff*/
+}
+.progress-text {
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center
+}
+
+#animation-controller {
+	display: none;
+	visibility: visible;
+	width: 70%;
+	position: absolute;
+	bottom: 14px;
+	left: 8%;
+	z-index: 6
+}
+/*取消进度条*/
+#animation-controller #slider {
+	width: 100%;
+	display: block;
+}
+#controller #animation-menu,#controller #btn-playing,#controller #slider-formatter {
+	display: inline-block;
+	line-height: 24px;
+	vertical-align: top
+}
+#slider-formatter {
+	margin: 0 20px;
+	width: 40px;
+}
+#animation-menu {
+	position: relative;
+	cursor: pointer;
+    /*加*/
+    width:80px;
+}
+#animation-menu #animations-list {
+	display: none;
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #fafafa;
+	border-radius: 10px
+}
+#animation-menu #animations-list .item {
+	padding: 6px
+}
+#animation-menu #animations-list .item:hover {
+	background-color: #dadada
+}
+#animation-menu #animations-list .item:first-child:hover {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px
+}
+#animation-menu #animations-list .item:last-child:hover {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px
+}
+.icon-moshi {
+	width: 20px;
+	height: 30px
+}
+.icon-help {
+	width: 18px;
+	height: 20px
+}
+@media screen and (max-width: 1000px) {
+	#animation-controller {
+	width: 50%;
+	left: 5%
+}
+}
+@media screen and (max-width: 500px) {
+	.props-icon-box {
+	bottom: auto;
+	top: 10px;
+	right: 10px;
+    display:none;
+}
+li:hover .btn-tips {
+	top: 35px
+}
+#animation-controller {
+	width: 80%;
+	left: 10%
+}
+}
+
+
+
+
+
+.copyright {
+	position: absolute;
+	width: 60%;
+	left: 20%;
+    margin-left:30%;
+    height:20px;
+    bottom: -10px;
+    /*margin-top:25%;*/
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+    /*background-color:red;*/
+
+
+}
+.copyright .logo {
+	margin-bottom: 10px
+}
+.copyright .text {
+	height: 20px;
+	line-height: 20px;
+	font-size: 10px;
+    color:rgba(221,221,221,.7);
+	margin-bottom: 2.5px;
+	text-align: center
+}

@@ -1,0 +1,499 @@
+{
+	"application_properties": {
+		"loading_screen_script": null,
+		"transparent_canvas": true,
+		"use_device_pixel_ratio": true,
+		"use_legacy_scripts": true,
+		"vr_polyfill_url": "/js/canvas/webvr_polyfill-84f10aae44.js",
+		"vr": true,
+		"height": 460,
+		"libraries": [],
+		"width": 800,
+		"fill_mode": "FILLMODE_FILL_WINDOW",
+		"scripts": [],
+		"preserve_drawing_buffer": true,
+		"resolution_mode": "AUTO"
+	},
+	"assets": {
+		"5000110": {
+			"preload": true,
+			"name": "5000110",
+			"tags": [],
+			"type": "cubemap",
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500011/5000111/5000111.dds",
+				"filename": "5000111"
+			},
+			"data": {
+				"textures": [],
+				"minFilter": 5,
+				"name": "500011",
+				"anisotropy": 1,
+				"rgbm": true,
+				"magFilter": 1
+			},
+			"id": "5000110",
+			"revision": 1
+		},
+		"5000": {
+			"preload": true,
+			"name": "esun3dplus.oss-cn-shenzhen.aliyuncs.com/8f334d739f97f96989467924ec502c0c60b430e1/2d00f97dc88fedb85e267eb2f44190995da20672/584bd1a0feaf0fd0f4f484f6de0e4f09.json",
+			"tags": [],
+			"type": "model",
+			"region": "eu-west-1",
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/8f334d739f97f96989467924ec502c0c60b430e1/2d00f97dc88fedb85e267eb2f44190995da20672/584bd1a0feaf0fd0f4f484f6de0e4f09.json",
+				"size": null,
+				"filename": "esun3dplus.oss-cn-shenzhen.aliyuncs.com/8f334d739f97f96989467924ec502c0c60b430e1/2d00f97dc88fedb85e267eb2f44190995da20672/584bd1a0feaf0fd0f4f484f6de0e4f09.json"
+			},
+			"data": {
+				"mapping": [{
+					"material": "4001"
+				}],
+				"area": 0
+			},
+			"id": "5000",
+			"revision": 1
+		},
+		"5000015": {
+			"preload": false,
+			"name": "5000015",
+			"tags": [],
+			"data": {
+				"minfilter": "linear_mip_linear",
+				"magfilter": "linear",
+				"addressu": "repeat",
+				"addressv": "repeat",
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000015/5000015.png",
+				"filename": "5000015.png"
+			},
+			"type": "texture",
+			"id": "5000015",
+			"revision": 1
+		},
+		"4001": {
+			"preload": true,
+			"name": "hsc_343_1:defaultMat1",
+			"tags": [],
+			"type": "material",
+			"region": "eu-west-1",
+			"meta": {
+				"index": 0
+			},
+			"file": null,
+			"data": {
+				"lightMapUv": 1,
+				"glossMapVertexColor": false,
+				"normalMap": null,
+				"diffuseMapOffset": [0, 0],
+				"emissiveMapVertexColor": false,
+				"useLighting": true,
+				"glossMapOffset": [0, 0],
+				"diffuse": [1, 1, 1, 1],
+				"opacityMapChannel": "g",
+				"diffuseMap": 4004,
+				"specularMapTint": false,
+				"glossMapUv": 0,
+				"opacityMapVertexColor": false,
+				"specularMapChannel": "rgb",
+				"diffuseMapChannel": "rgb",
+				"name": "hsc_343_1:defaultMat1",
+				"opacityMapUv": 0,
+				"metalnessMapTint": false,
+				"refractionIndex": 0.6666666666666666,
+				"emissiveMapUv": 0,
+				"aoMapTiling": [1, 1],
+				"aoMapUv": 0,
+				"specularMap": null,
+				"cubeMap": null,
+				"metalness": 0.13,
+				"sphereMap": null,
+				"metalnessMapTiling": [1, 1],
+				"ambientTint": false,
+				"diffuseMapUv": 0,
+				"glossMap": null,
+				"opacityMapOffset": [0, 0],
+				"normalMapTiling": [1, 1],
+				"heightMapFactor": 1,
+				"heightMapChannel": "g",
+				"specularMapVertexColor": false,
+				"emissiveMapOffset": [0, 0],
+				"cull": 1,
+				"aoMapVertexColor": false,
+				"emissive": [0, 0, 0, 1],
+				"emissiveMap": null,
+				"heightMap": null,
+				"heightMapTiling": [1, 1],
+				"alphaTest": 0,
+				"shader": "blinn",
+				"specular": [0, 0, 0, 1],
+				"emissiveMapTiling": [1, 1],
+				"refraction": 0,
+				"specularAntialias": false,
+				"cubeMapProjectionBox": {
+					"center": [0, 0, 0],
+					"halfExtents": [0.5, 0.5, 0.5]
+				},
+				"useGammaTonemap": true,
+				"opacityMap": null,
+				"depthWrite": true,
+				"lightMapChannel": "rgb",
+				"heightMapUv": 0,
+				"reflectivity": 1,
+				"useSkybox": true,
+				"metalnessMapOffset": [0, 0],
+				"specularMapTiling": [1, 1],
+				"aoMap": null,
+				"metalnessMapUv": 0,
+				"normalMapOffset": [0, 0],
+				"fresnelModel": 0,
+				"aoMapChannel": "g",
+				"fresnelFactor": 0,
+				"useFog": true,
+				"blendType": 3,
+				"metalnessMap": null,
+				"cubeMapProjection": 0,
+				"lightMapVertexColor": false,
+				"conserveEnergy": true,
+				"glossMapChannel": "g",
+				"aoMapOffset": [0, 0],
+				"occludeSpecular": 1,
+				"useMetalness": true,
+				"metalnessMapChannel": "g",
+				"heightMapOffset": [0, 0],
+				"shininess": 3.18,
+				"depthTest": true,
+				"normalMapUv": 0,
+				"bumpMapFactor": 1,
+				"ambient": [0.699999988079071, 0.699999988079071, 0.699999988079071, 1],
+				"shadowSampleType": 1,
+				"diffuseMapVertexColor": false,
+				"emissiveMapTint": false,
+				"metalnessMapVertexColor": false,
+				"opacity": 1,
+				"opacityMapTiling": [1, 1],
+				"glossMapTiling": [1, 1],
+				"lightMapOffset": [0, 0],
+				"specularMapUv": 0,
+				"diffuseMapTiling": [1, 1],
+				"lightMap": null,
+				"specularMapOffset": [0, 0],
+				"lightMapTiling": [1, 1],
+				"diffuseMapTint": false,
+				"emissiveIntensity": 1,
+				"emissiveMapChannel": "rgb"
+			},
+			"id": "4001",
+			"revision": 1
+		},
+		"5000017": {
+			"preload": false,
+			"name": "5000017",
+			"tags": [],
+			"data": {
+				"minfilter": "linear_mip_linear",
+				"magfilter": "linear",
+				"addressu": "repeat",
+				"addressv": "repeat",
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000017/5000017.png",
+				"filename": "5000017.png"
+			},
+			"type": "texture",
+			"id": "5000017",
+			"revision": 1
+		},
+		"5000016": {
+			"preload": false,
+			"name": "5000016",
+			"tags": [],
+			"data": {
+				"minfilter": "linear_mip_linear",
+				"magfilter": "linear",
+				"addressu": "repeat",
+				"addressv": "repeat",
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000016/5000016.png",
+				"filename": "5000016.png"
+			},
+			"type": "texture",
+			"id": "5000016",
+			"revision": 1
+		},
+		"4004": {
+			"preload": true,
+			"name": "hsc-343.jpg",
+			"tags": [],
+			"type": "texture",
+			"region": "eu-west-1",
+			"file": {
+				"url": "aliyun/e06921b57938871a733920f20fa33d46.jpg?t=f947e0b4ef6563463cf1b92082511b95a8b97734",
+				"filename": "hsc-343.jpg"
+			},
+			"data": {
+				"addressu": "repeat",
+				"addressv": "repeat"
+			},
+			"id": "4004",
+			"revision": 1
+		},
+		"5000010": {
+			"preload": false,
+			"name": "5000010",
+			"tags": [],
+			"data": {
+				"textures": [5000012, 5000013, 5000014, 5000015, 5000016, 5000017],
+				"minFilter": 5,
+				"name": "5000010",
+				"magFilter": 1,
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000011/5000011.dds",
+				"filename": "5000011.dds"
+			},
+			"type": "cubemap",
+			"id": "5000010",
+			"revision": 1
+		},
+		"5000013": {
+			"preload": false,
+			"name": "5000013",
+			"tags": [],
+			"data": {
+				"minfilter": "linear_mip_linear",
+				"magfilter": "linear",
+				"addressu": "repeat",
+				"addressv": "repeat",
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000013/5000013.png",
+				"filename": "5000013.png"
+			},
+			"type": "texture",
+			"id": "5000013",
+			"revision": 1
+		},
+		"5000012": {
+			"preload": false,
+			"name": "5000012",
+			"tags": [],
+			"data": {
+				"minfilter": "linear_mip_linear",
+				"magfilter": "linear",
+				"addressu": "repeat",
+				"addressv": "repeat",
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000012/5000012.png",
+				"filename": "5000012.png"
+			},
+			"type": "texture",
+			"id": "5000012",
+			"revision": 1
+		},
+		"5727293": {
+			"preload": true,
+			"name": "web-vr-ui.js",
+			"type": "script",
+			"region": "eu-west-1",
+			"meta": null,
+			"data": {
+				"loading": false,
+				"scripts": {
+					"webVrUi": {
+						"attributes": {
+							"camera": {
+								"type": "entity",
+								"title": "Camera"
+							}
+						},
+						"attributesOrder": ["camera"]
+					}
+				}
+			},
+			"id": "5727293",
+			"revision": 1
+		},
+		"3000": {
+			"preload": true,
+			"name": "esun3dplus.oss-cn-shenzhen.aliyuncs.com/8f334d739f97f96989467924ec502c0c60b430e1/2d00f97dc88fedb85e267eb2f44190995da20672/8c53ca3f6ca85ee11ed6aa65e15e0961.json",
+			"tags": [],
+			"type": "model",
+			"region": "eu-west-1",
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/8f334d739f97f96989467924ec502c0c60b430e1/2d00f97dc88fedb85e267eb2f44190995da20672/8c53ca3f6ca85ee11ed6aa65e15e0961.json",
+				"size": null,
+				"filename": "esun3dplus.oss-cn-shenzhen.aliyuncs.com/8f334d739f97f96989467924ec502c0c60b430e1/2d00f97dc88fedb85e267eb2f44190995da20672/8c53ca3f6ca85ee11ed6aa65e15e0961.json"
+			},
+			"data": {
+				"mapping": [{
+					"material": "4001"
+				}],
+				"area": 0
+			},
+			"id": "3000",
+			"revision": 1
+		},
+		"5000014": {
+			"preload": false,
+			"name": "5000014",
+			"tags": [],
+			"data": {
+				"minfilter": "linear_mip_linear",
+				"magfilter": "linear",
+				"addressu": "repeat",
+				"addressv": "repeat",
+				"rgbm": true,
+				"anisotropy": 1
+			},
+			"meta": {},
+			"file": {
+				"url": "http://esun3dplus.oss-cn-shenzhen.aliyuncs.com/cubemaps/500001/5000014/5000014.png",
+				"filename": "5000014.png"
+			},
+			"type": "texture",
+			"id": "5000014",
+			"revision": 1
+		},
+		"8000": {
+			"preload": true,
+			"name": "bgImageMat",
+			"tags": [],
+			"type": "material",
+			"region": "eu-west-1",
+			"meta": {},
+			"file": null,
+			"data": {
+				"glossMapVertexColor": false,
+				"diffuseMapOffset": [0, 0],
+				"useLighting": false,
+				"glossMapOffset": [0, 0],
+				"diffuse": [1, 1, 1],
+				"opacityMapChannel": "g",
+				"diffuseMap": 8001,
+				"specularMapTint": false,
+				"glossMapUv": 0,
+				"opacityMapVertexColor": false,
+				"specularMapChannel": "rgb",
+				"diffuseMapChannel": "rgb",
+				"opacityMapUv": 0,
+				"metalnessMapTint": false,
+				"refractionIndex": 0.6666666666666666,
+				"emissiveMapUv": 0,
+				"aoMapTiling": [1, 1],
+				"aoMapUv": 0,
+				"metalness": 1,
+				"metalnessMapTiling": [1, 1],
+				"ambientTint": false,
+				"diffuseMapUv": 0,
+				"opacityMapOffset": [0, 0],
+				"normalMapTiling": [1, 1],
+				"heightMapFactor": 1,
+				"heightMapChannel": "g",
+				"specularMapVertexColor": false,
+				"emissiveMapOffset": [0, 0],
+				"cull": 1,
+				"aoMapVertexColor": false,
+				"emissive": [0, 0, 0],
+				"emissiveMap": 8001,
+				"lightMapUv": 1,
+				"alphaTest": 0,
+				"shader": "blinn",
+				"specular": [0.23, 0.23, 0.23],
+				"emissiveMapTiling": [1, 1],
+				"refraction": 0,
+				"specularAntialias": true,
+				"cubeMapProjectionBox": {
+					"center": [0, 0, 0],
+					"halfExtents": [0.5, 0.5, 0.5]
+				},
+				"useGammaTonemap": true,
+				"depthWrite": true,
+				"lightMapChannel": "rgb",
+				"heightMapUv": 0,
+				"reflectivity": 1,
+				"useSkybox": false,
+				"metalnessMapOffset": [0, 0],
+				"specularMapTiling": [1, 1],
+				"metalnessMapUv": 0,
+				"normalMapOffset": [0, 0],
+				"fresnelModel": 0,
+				"aoMapChannel": "g",
+				"fresnelFactor": 0,
+				"useFog": true,
+				"blendType": 3,
+				"emissiveMapVertexColor": false,
+				"cubeMapProjection": 0,
+				"lightMapVertexColor": false,
+				"conserveEnergy": true,
+				"heightMapTiling": [1, 1],
+				"glossMapChannel": "g",
+				"aoMapOffset": [0, 0],
+				"occludeSpecular": 1,
+				"useMetalness": false,
+				"metalnessMapChannel": "g",
+				"heightMapOffset": [0, 0],
+				"shininess": 32,
+				"depthTest": true,
+				"normalMapUv": 0,
+				"bumpMapFactor": 1,
+				"ambient": [0, 0, 0],
+				"shadowSampleType": 1,
+				"diffuseMapVertexColor": false,
+				"emissiveMapTint": false,
+				"metalnessMapVertexColor": false,
+				"opacity": 1,
+				"opacityMapTiling": [1, 1],
+				"glossMapTiling": [1, 1],
+				"lightMapOffset": [0, 0],
+				"specularMapUv": 0,
+				"diffuseMapTiling": [1, 1],
+				"specularMapOffset": [0, 0],
+				"lightMapTiling": [1, 1],
+				"diffuseMapTint": false,
+				"emissiveIntensity": 1,
+				"emissiveMapChannel": "rgb"
+			},
+			"id": "8000",
+			"revision": 1
+		},
+		"8001": {
+			"preload": true,
+			"name": "",
+			"tags": [],
+			"region": "eu-west-1",
+			"file": {
+				"url": "aliyun/0c742f757e498078cfd304c1fdf57ec4.jpg",
+				"filename": ""
+			},
+			"type": "texture",
+			"id": "8001",
+			"revision": 1
+		}
+	}
+}

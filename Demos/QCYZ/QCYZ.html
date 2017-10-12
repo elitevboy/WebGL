@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://www.esun3dcloud.com/libs/realibox/realibox-fcff53e8b3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>
+        开发者：易尚-琥珀君
+    </title>
+    <!--<script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?968e3bf4d9bc462cf4c2490fd6655c10";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>-->
+    <script src="http://www.esun3dcloud.com/libs/font/iconfont-73090c6740.js"></script>
+</head>
+<body>
+    <div id="app" class="app">
+        <!--加载进度条-->
+        <div class="progress" style="display: none">
+            <div class="progress-box">
+                 <!--<div class="progress-text">0%</div>--> 
+                <!--<img class="logo" src="images/logo.png" alt="">-->
+                <div class="progress-bar">
+                    <span style="width: 0%"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="text">copyright© ESUN</div>
+                <!--<img class="logo" src="images/logo.png" alt="">-->
+            </div>
+        </div>
+        <div class="canvas">
+            <canvas id="application-canvas" class="viewer-canvas"></canvas>
+        </div>
+        <div class="container">
+            <section class="thumbtack">
+                <ul>
+                    <!--<li class="tips">
+                        <span class="tag" style="top: 325.5px; left: 545.5px;">4</span>
+                        <div class="description show" style="top: 325.5px; left: 545.5px;">
+                            <i></i>
+                            <h3 class="title"></h3>
+                            <p class="content"></p>
+                        </div>
+                    </li>-->
+                </ul>
+            </section>
+            <section class="carousel">
+                <span class="btn-left">
+                    <svg viewBox="0 0 24 24" style="-webkit-user-select: none; display: inline-block; color: white; fill: currentcolor; height: 36px; width: 36px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path></svg>
+                </span>
+                <span class="btn-right">
+                    <svg viewBox="0 0 24 24" style="-webkit-user-select: none; display: inline-block; color: white; fill: currentcolor; height: 36px; width: 36px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg>
+                </span>
+                <div class="carousel-title">
+                    <p></p>
+                    <em></em>
+                </div>
+            </section>
+            <!--功能按钮-->
+            <section class="props-icon-box">
+                <ul>
+                    <li>
+                        <span class="btn-help">
+                            <svg class="icon icon-help" aria-hidden="true">
+                                <use xlink:href="#icon-help"></use>
+                            </svg>
+                        </span>
+                        <div class="btn-tips help-box">
+                            <span>
+                                <ul class="help-content">
+                                    <li>
+                                        <p>
+                                            <svg class="icon icon-one" aria-hidden="true">
+                                                <use xlink:href="#icon-icon_rotate"></use>
+                                            </svg>
+                                        </p>
+                                        <p>
+                                            <svg class="icon icon-two" aria-hidden="true">
+                                                <use xlink:href="#icon-rotate"></use>
+                                            </svg>
+                                        </p>
+                                        <p> 旋转</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <svg class="icon icon-one" aria-hidden="true">
+                                                <use xlink:href="#icon-icon_zoom1"></use>
+                                            </svg>
+                                        </p>
+                                        <p>
+                                            <svg class="icon icon-two" aria-hidden="true">
+                                                <use xlink:href="#icon-zoom"></use>
+                                            </svg>
+                                        </p>
+                                        <p> 缩放</p>
+
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <svg class="icon icon-one" aria-hidden="true">
+                                                <use xlink:href="#icon-icon_move"></use>
+                                            </svg>
+                                        </p>
+                                        <p>
+                                            <svg class="icon icon-two" aria-hidden="true">
+                                                <use xlink:href="#icon-move1"></use>
+                                            </svg>
+                                        </p>
+                                        <p> 移动</p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="btn-mode">
+                            <svg class="icon icon-moshi" aria-hidden="true">
+                                <use xlink:href="#icon-moshi"></use>
+                            </svg>
+                        </span>
+                        <div class="btn-tips rendering-box">
+                            <span>
+                                <ul id="renderingList">
+                                    <li class="active">Light</li>
+                                    <li>Shadeless</li>
+                                    <li>MatCap</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="btn-vr">
+                            <svg class="icon icon-vr" aria-hidden="true">
+                                <use xlink:href="#icon-vr"></use>
+                            </svg>
+                        </span>
+                        <div class="btn-tips btn-vr-tips">
+                            <span>VR</span>
+                        </div>
+                        <div class="vr_tips_box fade-in">
+                            <p class="tips-text">
+                                <!-- react-text: 18 -->对不起，您的浏览器不支持VR功能<!-- /react-text -->
+                                <!-- react-text: 19 --> <!-- /react-text -->
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="btn-full" id="fullBox">
+                            <svg class="icon icon-full" aria-hidden="true">
+                                <use xlink:href="#icon-quanping"></use>
+                            </svg>
+                        </span>
+                        <div class="btn-tips">
+                            <span>全屏</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+            <section id="animation-controller">
+                <!--这是动画进度条-->
+                <input id="slider" type="range" min="0" max="0" value="0" step="0.01" />
+                <div id="controller">
+                    <svg id="btn-playing"
+                         viewBox="0 0 24 24"
+                         style="display: inline-block; color: rgba(0, 0, 0, 0.870588); height: 24px; width: 24px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; user-select: none;">
+                        <!-- stop -->
+                        <path id="path" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+                    </svg>
+
+                    <span id="slider-formatter">00:00</span>
+                    <div id="animation-menu">
+                        <span id="current-animation"></span>
+                        <ul id="animations-list"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="http://www.esun3dcloud.com/js/vender-4bc09f6ea0.js"></script>
+    <script src="js/productions.js"></script>
+</body>
+</html>
