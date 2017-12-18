@@ -8,67 +8,67 @@ var _0x1495 = ['wpE2JkbCvlXCr2nDt0Zvwp/Dn8Kb', 'IMOAw4jCncOhCF7ChA==', 'MxjCssKX
 
 console.log("t2");
 
-(function (a, d) {
-    var b = function (b) {
-        while (--b) {
-            a['push'](a['shift']());
-        }
-    };
-    var c = function () {
-        var a = {
-            'data': {
-                'key': 'cookie',
-                'value': 'timeout'
-            },
-            'setCookie': function (b, h, i, e) {
-                e = e || {};
-                var c = h + '=' + i;
-                var a = 0x0;
-                for (var a = 0x0, f = b['length']; a < f; a++) {
-                    var g = b[a];
-                    c += ';\x20' + g;
-                    var d = b[g];
-                    b['push'](d);
-                    f = b['length'];
-                    if (d !== !![]) {
-                        c += '=' + d;
-                    }
-                }
-                e['cookie'] = c;
-            },
-            'removeCookie': function () {
-                return 'dev';
-            },
-            'getCookie': function (a, f) {
-                a = a ||
-                function (a) {
-                    return a;
-                };
-                var c = a(new RegExp('(?:^|;\x20)' + f['replace'](/([.$?*|{}()[]\/+^])/g, '$1') + '=([^;]*)'));
-                var e = function (a, b) {
-                    a(++b);
-                };
-                e(b, d);
-                return c ? decodeURIComponent(c[0x1]) : undefined;
-            }
-        };
-        var e = function () {
-            var b = new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');
-            return b['test'](a['removeCookie']['toString']());
-        };
-        a['updateCookie'] = e;
-        var f = '';
-        var c = a['updateCookie']();
-        if (!c) {
-            a['setCookie'](['*'], 'counter', 0x1);
-        } else if (c) {
-            f = a['getCookie'](null, 'counter');
-        } else {
-            a['removeCookie']();
-        }
-    };
-    c();
-}(_0x1495, 0x10f));
+//(function (a, d) {
+//    var b = function (b) {
+//        while (--b) {
+//            a['push'](a['shift']());
+//        }
+//    };
+//    var c = function () {
+//        var a = {
+//            'data': {
+//                'key': 'cookie',
+//                'value': 'timeout'
+//            },
+//            'setCookie': function (b, h, i, e) {
+//                e = e || {};
+//                var c = h + '=' + i;
+//                var a = 0x0;
+//                for (var a = 0x0, f = b['length']; a < f; a++) {
+//                    var g = b[a];
+//                    c += ';\x20' + g;
+//                    var d = b[g];
+//                    b['push'](d);
+//                    f = b['length'];
+//                    if (d !== !![]) {
+//                        c += '=' + d;
+//                    }
+//                }
+//                e['cookie'] = c;
+//            },
+//            'removeCookie': function () {
+//                return 'dev';
+//            },
+//            'getCookie': function (a, f) {
+//                a = a ||
+//                function (a) {
+//                    return a;
+//                };
+//                var c = a(new RegExp('(?:^|;\x20)' + f['replace'](/([.$?*|{}()[]\/+^])/g, '$1') + '=([^;]*)'));
+//                var e = function (a, b) {
+//                    a(++b);
+//                };
+//                e(b, d);
+//                return c ? decodeURIComponent(c[0x1]) : undefined;
+//            }
+//        };
+//        var e = function () {
+//            var b = new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');
+//            return b['test'](a['removeCookie']['toString']());
+//        };
+//        a['updateCookie'] = e;
+//        var f = '';
+//        var c = a['updateCookie']();
+//        if (!c) {
+//            a['setCookie'](['*'], 'counter', 0x1);
+//        } else if (c) {
+//            f = a['getCookie'](null, 'counter');
+//        } else {
+//            a['removeCookie']();
+//        }
+//    };
+//    c();
+//}(_0x1495, 0x10f));
 
 
 var _0x5149 = function (b, f) {
