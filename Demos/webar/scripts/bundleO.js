@@ -186,7 +186,7 @@ window.alert(_0x5149('0x0', 'pt0$'));
 
 
 
-/**
+
 
 (function (c) {
     var d = function () {
@@ -657,4 +657,3 @@ window.alert(_0x5149('0x0', 'pt0$'));
     };
 }]));
 
-**/
