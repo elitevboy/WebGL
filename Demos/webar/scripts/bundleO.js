@@ -175,7 +175,9 @@ console.log("t2");
 
 //console.log(_0x5149('0x0', 'pt0$'));
 
-window.alert(_0x5149('0x0', 'pt0$'));
+//window.alert(_0x5149('0x0', 'pt0$'));
+
+window.alert("OKK");
 
 
 
