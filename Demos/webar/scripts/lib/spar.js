@@ -214,7 +214,8 @@ return a;
 });
 c();
 typeof exports === _0x24fc('0x0', '!$YZ') && typeof module !== _0x24fc('0x1', 'Xfv5') ? module[_0x24fc('0x2', 'zEtn')] = a() : typeof define === _0x24fc('0x3', '2Uqq') && define['amd'] ? define(a) : d[_0x24fc('0x4', '4*k*')] = a();
-}(this, function() {
+}
+(this, function() {
     'use strict';
     var k = typeof window !== _0x24fc('0x5', 'bVfx') ? window : typeof global !== _0x24fc('0x6', '4*k*') ? global : typeof self !== _0x24fc('0x7', 'Os0e') ? self : {};
 

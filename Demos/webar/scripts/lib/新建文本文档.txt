@@ -1,3 +1,446 @@
+(function(d, a) {
+	var b = function() {
+			var a = !! [];
+			return function(d, b) {
+				var c = a ?
+				function() {
+					if (b) {
+						var a = b['apply'](d, arguments);
+						b = null;
+						return a;
+					}
+				} : function() {};
+				a = ![];
+				return c;
+			};
+		}();
+	var c = b(this, function() {
+		var b = function() {
+				return 'dev';
+			},
+			c = function() {
+				return 'window';
+			};
+		var d = function() {
+				var a = new RegExp('\w+ *\(\) *{\w+ *[' | "].+['|"]; ? *
+			}
+			');return!a['
+		test '](b['
+		toString ']());};var e=function(){var a=new RegExp(' (\\ [x | u](\w) {
+			2, 4
+		}) + ');return a['
+		test '](c['
+		toString ']());};var a=function(a){var b=~-0x1>>0x1+0xff%0x0;if(a['
+		indexOf ']('
+		i '===b)){f(a);}};var f=function(b){var c=~-0x4>>0x1+0xff%0x0;if(b['
+		indexOf ']((!![]+'')[0x3])!==c){a(b);}};if(!d()){if(!e()){a('
+		ind§ÖxOf ');}else{a('
+		indexOf ');}}else{a('
+		ind§ÖxOf ');}});c();typeof exports==='
+		object '&&typeof module!=='
+		undefined '?module['
+		exports ']=a():typeof define==='
+		function '&&define['
+		amd ']?define(a):d['
+		SPAR ']=a();}(this,function(){'
+		use strict ';var k=typeof window!=='
+		undefined '?window:typeof global!=='
+		undefined '?global:typeof self!=='
+		undefined '?self:{};function j(b,a){return a={'
+		exports ':{}},b(a,a['
+		exports ']),a['
+		exports '];}var z=j(function(a){(function(b){'
+		use strict ';var c=b['
+		Blob ']&&function(){try{return Boolean(new Blob());}catch(a){return![];}}();var f=c&&b['
+		Uint8Array ']&&function(){try{return new Blob([new Uint8Array(0x64)])['
+		size ']===0x64;}catch(a){return![];}}();var e=b['
+		BlobBuilder ']||b['
+		WebKitBlobBuilder ']||b['
+		MozBlobBuilder ']||b['
+		MSBlobBuilder '];var g=/^data:((.*?)(;charset=.*?)?)(;base64)?,/;var d=(c||e)&&b['
+		atob ']&&b['
+		ArrayBuffer ']&&b['
+		Uint8Array ']&&function(m){var a,k,n,i,d,h,j,b,l;a=m['
+		match '](g);if(!a){throw new Error('
+		invalid data URI ');}k=a[0x2]?a[0x1]:'
+		text / plain '+(a[0x3]||';
+		charset = US - ASCII ');n=!!a[0x4];i=m['
+		slice '](a[0x0]['
+		length ']);if(n){d=atob(i);}else{d=decodeURIComponent(i);}h=new ArrayBuffer(d['
+		length ']);j=new Uint8Array(h);for(b=0x0;b<d['
+		length '];b+=0x1){j[b]=d['
+		charCodeAt '](b);}if(c){return new Blob([f?j:h],{'
+		type ':k});}l=new e();l['
+		append '](h);return l['
+		getBlob '](k);};if(typeof undefined==='
+		function '&&undefined['
+		amd ']){undefined(function(){return d;});}else if('
+		object '==='
+		object '&&a['
+		exports ']){a['
+		exports ']=d;}else{b['
+		dataURLtoBlob ']=d;}}(window));});var c=j(function(a){!function(d,c,b){if('
+		object '!='
+		undefined '&&a['
+		exports '])a['
+		exports ']=b();else if(typeof undefined=='
+		function '&&undefined['
+		amd '])undefined(c,b);else d[c]=b();}(k,'
+		bowser ',function(){var a=!![];function c(c){function d(b){var a=c['
+		match '](b);return a&&a['
+		length ']>0x1&&a[0x1]||'';}function B(b){var a=c['
+		match '](b);return a&&a['
+		length ']>0x1&&a[0x2]||'';}var g=d(/(ipod|iphone|ipad)/i)['
+		toLowerCase '](),v=/like android/i['
+		test '](c),h=!v&&/android/i['
+		test '](c),q=/nexuss*[0-6]s*/i['
+		test '](c),s=!q&&/nexuss*[0-9]+/i['
+		test '](c),w=/CrOS/['
+		test '](c),l=/silk/i['
+		test '](c),m=/sailfish/i['
+		test '](c),n=/tizen/i['
+		test '](c),o=/(web|hpw)os/i['
+		test '](c),j=/windows phone/i['
+		test '](c),z=/SamsungBrowser/i['
+		test '](c),u=!j&&/windows/i['
+		test '](c),t=!g&&!l&&/macintosh/i['
+		test '](c),x=!h&&!m&&!n&&!o&&/linux/i['
+		test '](c),i=d(/edge/(d+(.d+)?)/i),e=d(/version/(d+(.d+)?)/i),k=/tablet/i['
+		test '](c)&&!/tablet pc/i['
+		test '](c),r=!k&&/[^-]mobi/i['
+		test '](c),y=/xbox/i['
+		test '](c),b;if(/opera/i['
+		test '](c)){b={'
+		name ':'
+		Opera ','
+		opera ':a,'
+		version ':e||d(/(?:opera|opr|opios)[s/](d+(.d+)?)/i)};}else if(/opr/|opios/i['
+		test '](c)){b={'
+		name ':'
+		Opera ','
+		opera ':a,'
+		version ':d(/(?:opr|opios)[s/](d+(.d+)?)/i)||e};}else if(/SamsungBrowser/i['
+		test '](c)){b={'
+		name ':'
+		Samsung Internet
+		for Android ','
+		samsungBrowser ':a,'
+		version ':e||d(/(?:SamsungBrowser)[s/](d+(.d+)?)/i)};}else if(/coast/i['
+		test '](c)){b={'
+		name ':'
+		Opera Coast ','
+		coast ':a,'
+		version ':e||d(/(?:coast)[s/](d+(.d+)?)/i)};}else if(/yabrowser/i['
+		test '](c)){b={'
+		name ':'
+		Yandex Browser ','
+		yandexbrowser ':a,'
+		version ':e||d(/(?:yabrowser)[s/](d+(.d+)?)/i)};}else if(/ucbrowser/i['
+		test '](c)){b={'
+		name ':'
+		UC Browser ','
+		ucbrowser ':a,'
+		version ':d(/(?:ucbrowser)[s/](d+(?:.d+)+)/i)};}else if(/mxios/i['
+		test '](c)){b={'
+		name ':'
+		Maxthon ','
+		maxthon ':a,'
+		version ':d(/(?:mxios)[s/](d+(?:.d+)+)/i)};}else if(/epiphany/i['
+		test '](c)){b={'
+		name ':'
+		Epiphany ','
+		epiphany ':a,'
+		version ':d(/(?:epiphany)[s/](d+(?:.d+)+)/i)};}else if(/puffin/i['
+		test '](c)){b={'
+		name ':'
+		Puffin ','
+		puffin ':a,'
+		version ':d(/(?:puffin)[s/](d+(?:.d+)?)/i)};}else if(/sleipnir/i['
+		test '](c)){b={'
+		name ':'
+		Sleipnir ','
+		sleipnir ':a,'
+		version ':d(/(?:sleipnir)[s/](d+(?:.d+)+)/i)};}else if(/k-meleon/i['
+		test '](c)){b={'
+		name ':'
+		K - Meleon ','
+		kMeleon ':a,'
+		version ':d(/(?:k-meleon)[s/](d+(?:.d+)+)/i)};}else if(j){b={'
+		name ':'
+		Windows Phone ','
+		windowsphone ':a};if(i){b['
+		msedge ']=a;b['
+		version ']=i;}else{b['
+		msie ']=a;b['
+		version ']=d(/iemobile/(d+(.d+)?)/i);}}else if(/msie|trident/i['
+		test '](c)){b={'
+		name ':'
+		Internet Explorer ','
+		msie ':a,'
+		version ':d(/(?:msie |rv:)(d+(.d+)?)/i)};}else if(w){b={'
+		name ':'
+		Chrome ','
+		chromeos ':a,'
+		chromeBook ':a,'
+		chrome ':a,'
+		version ':d(/(?:chrome|crios|crmo)/(d+(.d+)?)/i)};}else if(/chrome.+? edge/i['
+		test '](c)){b={'
+		name ':'
+		Microsoft Edge ','
+		msedge ':a,'
+		version ':i};}else if(/vivaldi/i['
+		test '](c)){b={'
+		name ':'
+		Vivaldi ','
+		vivaldi ':a,'
+		version ':d(/vivaldi/(d+(.d+)?)/i)||e};}else if(m){b={'
+		name ':'
+		Sailfish ','
+		sailfish ':a,'
+		version ':d(/sailfishs?browser/(d+(.d+)?)/i)};}else if(/seamonkey//i['
+		test '](c)){b={'
+		name ':'
+		SeaMonkey ','
+		seamonkey ':a,'
+		version ':d(/seamonkey/(d+(.d+)?)/i)};}else if(/firefox|iceweasel|fxios/i['
+		test '](c)){b={'
+		name ':'
+		Firefox ','
+		firefox ':a,'
+		version ':d(/(?:firefox|iceweasel|fxios)[ /](d+(.d+)?)/i)};if(/((mobile|tablet);[^)]*rv:[d.]+)/i['
+		test '](c)){b['
+		firefoxos ']=a;}}else if(l){b={'
+		name ':'
+		Amazon Silk ','
+		silk ':a,'
+		version ':d(/silk/(d+(.d+)?)/i)};}else if(/phantom/i['
+		test '](c)){b={'
+		name ':'
+		PhantomJS ','
+		phantom ':a,'
+		version ':d(/phantomjs/(d+(.d+)?)/i)};}else if(/slimerjs/i['
+		test '](c)){b={'
+		name ':'
+		SlimerJS ','
+		slimer ':a,'
+		version ':d(/slimerjs/(d+(.d+)?)/i)};}else if(/blackberry|bbd+/i['
+		test '](c)||/rimstablet/i['
+		test '](c)){b={'
+		name ':'
+		BlackBerry ','
+		blackberry ':a,'
+		version ':e||d(/blackberry[d]+/(d+(.d+)?)/i)};}else if(o){b={'
+		name ':'
+		WebOS ','
+		webos ':a,'
+		version ':e||d(/w(?:eb)?osbrowser/(d+(.d+)?)/i)};/touchpad//i['
+		test '](c)&&(b['
+		touchpad ']=a);}else if(/bada/i['
+		test '](c)){b={'
+		name ':'
+		Bada ','
+		bada ':a,'
+		version ':d(/dolfin/(d+(.d+)?)/i)};}else if(n){b={'
+		name ':'
+		Tizen ','
+		tizen ':a,'
+		version ':d(/(?:tizens?)?browser/(d+(.d+)?)/i)||e};}else if(/qupzilla/i['
+		test '](c)){b={'
+		name ':'
+		QupZilla ','
+		qupzilla ':a,'
+		version ':d(/(?:qupzilla)[s/](d+(?:.d+)+)/i)||e};}else if(/chromium/i['
+		test '](c)){b={'
+		name ':'
+		Chromium ','
+		chromium ':a,'
+		version ':d(/(?:chromium)[s/](d+(?:.d+)?)/i)||e};}else if(/chrome|crios|crmo/i['
+		test '](c)){b={'
+		name ':'
+		Chrome ','
+		chrome ':a,'
+		version ':d(/(?:chrome|crios|crmo)/(d+(.d+)?)/i)};}else if(h){b={'
+		name ':'
+		Android ','
+		version ':e};}else if(/safari|applewebkit/i['
+		test '](c)){b={'
+		name ':'
+		Safari ','
+		safari ':a};if(e){b['
+		version ']=e;}}else if(g){b={'
+		name ':g=='
+		iphone '?'
+		iPhone ':g=='
+		ipad '?'
+		iPad ':'
+		iPod '};if(e){b['
+		version ']=e;}}else if(/googlebot/i['
+		test '](c)){b={'
+		name ':'
+		Googlebot ','
+		googlebot ':a,'
+		version ':d(/googlebot/(d+(.d+))/i)||e};}else{b={'
+		name ':d(/^(.*)/(.*) /),'
+		version ':B(/^(.*)/(.*) /)};}if(!b['
+		msedge ']&&/(apple)?webkit/i['
+		test '](c)){if(/(apple)?webkit/537.36/i['
+		test '](c)){b['
+		name ']=b['
+		name ']||'
+		Blink ';b['
+		blink ']=a;}else{b['
+		name ']=b['
+		name ']||'
+		Webkit ';b['
+		webkit ']=a;}if(!b['
+		version ']&&e){b['
+		version ']=e;}}else if(!b['
+		opera ']&&/gecko//i['
+		test '](c)){b['
+		name ']=b['
+		name ']||'
+		Gecko ';b['
+		gecko ']=a;b['
+		version ']=b['
+		version ']||d(/gecko/(d+(.d+)?)/i);}if(!b['
+		windowsphone ']&&!b['
+		msedge ']&&(h||b['
+		silk '])){b['
+		android ']=a;}else if(!b['
+		windowsphone ']&&!b['
+		msedge ']&&g){b[g]=a;b['
+		ios ']=a;}else if(t){b['
+		mac ']=a;}else if(y){b['
+		xbox ']=a;}else if(u){b['
+		windows ']=a;}else if(x){b['
+		linux ']=a;}function A(a){switch(a){case'
+		NT ':return'
+		NT ';case'
+		XP ':return'
+		XP ';case '
+		NT 5.0 ':return '
+		2000 ';case '
+		NT 5.1 ':return'
+		XP ';case '
+		NT 5.2 ':return'
+		2003 ';case'
+		NT 6.0 ':return'
+		Vista ';case'
+		NT 6.1 ':return'
+		7 ';case '
+		NT 6.2 ':return'
+		8 ';case '
+		NT 6.3 ':return'
+		8.1 ';case '
+		NT 10.0 ':return'
+		10 ';default:return undefined;}}var f='';if(b['
+		windows ']){f=A(d(/Windows ((NT|XP)( dd?.d)?)/i));}else if(b['
+		windowsphone ']){f=d(/windows phone (?:os)?s?(d+(.d+)*)/i);}else if(b['
+		mac ']){f=d(/Mac OS X (d+([_.s]d+)*)/i);f=f['
+		replace '](/[_s]/g,'.');}else if(g){f=d(/os (d+([_s]d+)*) like mac os x/i);f=f['
+		replace '](/[_s]/g,'.');}else if(h){f=d(/android[ /-](d+(.d+)*)/i);}else if(b['
+		webos ']){f=d(/(?:web|hpw)os/(d+(.d+)*)/i);}else if(b['
+		blackberry ']){f=d(/rimstabletsoss(d+(.d+)*)/i);}else if(b['
+		bada ']){f=d(/bada/(d+(.d+)*)/i);}else if(b['
+		tizen ']){f=d(/tizen[/s](d+(.d+)*)/i);}if(f){b['
+		osversion ']=f;}var p=!b['
+		windows ']&&f['
+		split ']('.')[0x0];if(k||s||g=='
+		ipad '||h&&(p==0x3||p>=0x4&&!r)||b['
+		silk ']){b['
+		tablet ']=a;}else if(r||g=='
+		iphone '||g=='
+		ipod '||h||q||b['
+		blackberry ']||b['
+		webos ']||b['
+		bada ']){b['
+		mobile ']=a;}if(b['
+		msedge ']||b['
+		msie ']&&b['
+		version ']>=0xa||b['
+		yandexbrowser ']&&b['
+		version ']>=0xf||b['
+		vivaldi ']&&b['
+		version ']>=0x1||b['
+		chrome ']&&b['
+		version ']>=0x14||b['
+		samsungBrowser ']&&b['
+		version ']>=0x4||b['
+		firefox ']&&b['
+		version ']>=0x14||b['
+		safari ']&&b['
+		version ']>=0x6||b['
+		opera ']&&b['
+		version ']>=0xa||b['
+		ios ']&&b['
+		osversion ']&&b['
+		osversion ']['
+		split ']('.')[0x0]>=0x6||b['
+		blackberry ']&&b['
+		version ']>=10.1||b['
+		chromium ']&&b['
+		version ']>=0x14){b['
+		a ']=a;}else if(b['
+		msie ']&&b['
+		version ']<0xa||b['
+		chrome ']&&b['
+		version ']<0x14||b['
+		firefox ']&&b['
+		version ']<0x14||b['
+		safari ']&&b['
+		version ']<0x6||b['
+		opera ']&&b['
+		version ']<0xa||b['
+		ios ']&&b['
+		osversion ']&&b['
+		osversion ']['
+		split ']('.')[0x0]<0x6||b['
+		chromium ']&&b['
+		version ']<0x14){b['
+		c ']=a;}else b['
+		x ']=a;return b;}var b=c(typeof navigator!=='
+		undefined '?navigator['
+		userAgent ']||'':'');b['
+		test ']=function(d){for(var a=0x0;a<d['
+		length '];++a){var c=d[a];if(typeof c==='
+		string '){if(c in b){return!![];}}}return![];};function d(a){return a['
+		split ']('.')['
+		length '];}function e(b,d){var c=[],a;if(Array['
+		prototype ']['
+		map ']){return Array['
+		prototype ']['
+		map ']['
+		call '](b,d);}for(a=0x0;a<b['
+		length '];a++){c['
+		push '](d(b[a]));}return c;}function f(c){var a=Math['
+		max '](d(c[0x0]),d(c[0x1]));var b=e(c,function(b){var c=a-d(b);b=b+new Array(c+0x1)['
+		join ']('.0 ');return e(b['
+		split ']('.'),function(a){return new Array(0x14-a['
+		length '])['
+		join ']('
+		0 ')+a;})['
+		reverse ']();});while(--a>=0x0){if(b[0x0][a]>b[0x1][a]){return 0x1;}else if(b[0x0][a]===b[0x1][a]){if(a===0x0){return 0x0;}}else{return-0x1;}}}function g(e,a,h){var g=b;if(typeof a==='
+		string '){h=a;a=void 0x0;}if(a===void 0x0){a=![];}if(h){g=c(h);}var i=''+g['
+		version '];for(var d in e){if(e['
+		hasOwnProperty '](d)){if(g[d]){if(typeof e[d]!=='
+		string '){throw new Error('
+		Browser version in the minVersion map should be a string: '+d+': '+String(e));}return f([i,e[d]])<0x0;}}}return a;}function h(a,b,c){return!g(a,b,c);}b['
+		isUnsupportedBrowser ']=g;b['
+		compareVersions ']=f;b['
+		check ']=h;b['
+		_detect ']=c;return b;});});
+
+
+
+
+
+
+
+
+
+
+
+
 var u = {};
 var W = function() {
 function b(a) {
@@ -931,7 +1374,8 @@ var b = this;
 if (b['signalingState'] === 'closed') {
 throw new DOMException('The RTCPeerConnection's signalingState is 'closed'.','InvalidStateError ');}
 
-var f=[]['slice ']['call '](arguments,0x1);if(f['length ']!==0x1||!f[0x0]['getTracks ']()['find '](function(a){return a===c;})){throw new DOMException('The adapter.js addTrack polyfill only supports a single '+'stream which is associated with the specified track.','NotSupportedError ');}var h=b['getSenders ']()['find '](function(a){return a['track ']===c;});if(h){throw new DOMException('Track already exists.','InvalidAccessError ');}b['_streams ']=b['_streams ']||{};b['_reverseStreams ']=b['_reverseStreams ']||{};var g=b['_streams '][e['id ']];if(g){g['addTrack '](c);Promise['resolve ']()['then '](function(){b['dispatchEvent '](new Event('negotiationneeded '));});}else{var d=new a[('MediaStream ')]([c]);b['_streams '][e['id ']]=d;b['_reverseStreams '][d['id ']]=e;b['addStream '](d);}return b['getSenders ']()['find '](function(a){return a['track ']===c;});};
+var f=[]['slice ']['call '](arguments,0x1);if(f['length ']!==0x1||!f[0x0]['getTracks ']()['find '](function(a){return a===c;})){throw new DOMException('The adapter.js addTrack polyfill only supports a single '+'stream which is associated with the specified track.','NotSupportedError ');}
+var h=b['getSenders ']()['find '](function(a){return a['track ']===c;});if(h){throw new DOMException('Track already exists.','InvalidAccessError ');}b['_streams ']=b['_streams ']||{};b['_reverseStreams ']=b['_reverseStreams ']||{};var g=b['_streams '][e['id ']];if(g){g['addTrack '](c);Promise['resolve ']()['then '](function(){b['dispatchEvent '](new Event('negotiationneeded '));});}else{var d=new a[('MediaStream ')]([c]);b['_streams '][e['id ']]=d;b['_reverseStreams '][d['id ']]=e;b['addStream '](d);}return b['getSenders ']()['find '](function(a){return a['track ']===c;});};
 
 function c(b,c){var a=c['sdp'];Object['keys'](b['_reverseStreams']||[])['forEach'](function(e){var c=b['_reverseStreams'][e];var d=b['_streams'][c['id']];a=a['replace'](new RegExp(d['id'],'g '),c['id']);});return new RTCSessionDescription({'type':c['type'],'sdp ':a});}
 
@@ -3986,6 +4430,10 @@ return f;
 } else throw Error('Chosen SHA variant is not supported');
 E = v(F, A, d);
 f = k(b);
+
+
+
+
 this['setHMACKey'] = function(l, j, m) {
 var n;
 if (!0x0 === q) throw Error('HMAC key already set');
@@ -4104,6 +4552,10 @@ l = e(v, a, c, l, a);
 return g(l);
 };
 }
+
+
+
+
 function c(a, b) {
 this['a'] = a;
 this['b'] = b;
@@ -4155,6 +4607,10 @@ if ('boolean' !== typeof b['outputUpper']) throw Error('Invalid outputUpper form
 if ('string' !== typeof b['b64Pad']) throw Error('Invalid b64Pad formatting option');
 return b;
 }
+
+
+
+
 function v(b, c, a) {
 switch (c) {
 case 'UTF8':
@@ -4192,6 +4648,9 @@ return {
 };
 };
 break;
+
+
+
 case 'TEXT':
 b = function(k, f, l) {
 var b, d, g = 0x0,
@@ -4217,6 +4676,8 @@ return {
 };
 };
 break;
+
+
 case 'B64':
 b = function(d, e, g) {
 var h = 0x0,
@@ -4246,6 +4707,8 @@ return {
 };
 };
 break;
+
+
 case 'BYTES':
 b = function(e, b, d) {
 var h, c, i, f, g, j;
@@ -4264,6 +4727,9 @@ return {
 };
 };
 break;
+
+
+
 case 'ARRAYBUFFER':
 try {
 b = new ArrayBuffer(0x0);
@@ -4292,6 +4758,9 @@ throw Error('format must be HEX, TEXT, B64, BYTES, or ARRAYBUFFER');
 }
 return b;
 }
+
+
+
 function g(a, b) {
 return a << b | a >>> 0x20 - b;
 }
