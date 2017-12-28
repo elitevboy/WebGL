@@ -335,6 +335,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 console['log']('catch\x20error', a);
             });
         };
+
+        l.click();
+
         //go();
 
 
