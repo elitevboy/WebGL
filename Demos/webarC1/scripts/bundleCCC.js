@@ -150,6 +150,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             }
             u['style']['display'] = 'none';
             B['style']['display'] = 'none';
+
+            l.click();
+
             /*change*/
             //隐藏开始图标
             l['style']['display'] = 'block';
@@ -337,10 +340,10 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         };
 
 
-        setTimeout(function () {
-            l['style']['display'] = 'none';
-            l.click();
-        }, 0x1388);
+        //setTimeout(function () {
+        //    l['style']['display'] = 'none';
+        //    l.click();
+        //}, 0x1388);
 
 
         
