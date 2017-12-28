@@ -103,7 +103,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         var G = 0x3c;
         var F = new THREE[('Projector')]();
         a = x();
-        console['log']('paramers=' + (a == 0x0 ? '直接体验' : '扫描体验'));
+        //console['log']('paramers=' + (a == 0x0 ? '直接体验' : '扫描体验'));
         var s = document['getElementById']('result');
         var z = document['getElementById']('target');
         var m = document['getElementById']('container');
@@ -114,21 +114,16 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         var u = document['getElementById']('play');
         var B = document['getElementById']('loadtext');
         var l = document['getElementById']('start');
-        console['log']('container' + m['clientWidth'] + ',' + m['clientHeight'] + ',' + window['innerHeight'] + ',' + window['innerWidth']);
+        //console['log']('container' + m['clientWidth'] + ',' + m['clientHeight'] + ',' + window['innerHeight'] + ',' + window['innerWidth']);
         var r = 0x140;
         var p = 0xf0;
         if (SPAR['browser']['ios']) {
-
-            //change
-            //console.log("ios"+ SPAR['browser']['ios']);
-
-
             r = 0x280;
             p = 0x1e0;
         }
         var j = window['innerWidth'];
         var g = window['innerHeight'];
-        console['log']('VideoDevice\x20' + j + ',' + g);
+        //console['log']('VideoDevice\x20' + j + ',' + g);
         var e = new SPAR[('VideoDevice')]({
             'width': j,
             'height': g
@@ -224,12 +219,12 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             var o = n['sub'](new THREE[('Vector3')](i, j, l));
                             var p = m['angleTo'](o) * 0xb4 / Math['PI'];
                             setTimeout(function () {
-                                var a = document['getElementById']('next');
-                                a['onclick'] = function () {
-                                    window['location']['href'] = '/webar/share.php';
-                                };
-                                a['style']['display'] = 'block';
-                                document['getElementById']('loading')['style']['display'] = 'none';
+                                //var a = document['getElementById']('next');
+                                //a['onclick'] = function () {
+                                //    window['location']['href'] = '/webar/share.php';
+                                //};
+                                //a['style']['display'] = 'block';
+                                //document['getElementById']('loading')['style']['display'] = 'none';
                             }, 0x2710);
                             if (p < 0x14) {
                                 D = !![];
@@ -367,11 +362,11 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
     }
 
     function x() {
-        var a = window['location']['href'];
-        var c = a['length'];
-        var d = a['indexOf']('?');
-        var e = a['substr'](d, c);
-        var b = e['split']('=');
+        //var a = window['location']['href'];
+        //var c = a['length'];
+        //var d = a['indexOf']('?');
+        //var e = a['substr'](d, c);
+        //var b = e['split']('=');
 
         //console.log("a" + a);
         //console.log("c" + c);
@@ -386,12 +381,14 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         //b?id,0
 
 
-        if (b['length'] == 0x2) {
-            return b[0x1];
-        } else {
-            return 0x0;
-        }
+        //if (b['length'] == 0x2) {
+        //    return b[0x1];
+        //} else {
+        //    return 0x0;
+        //}
 
+/*change*/
+        return 0x0;
 
 
 
