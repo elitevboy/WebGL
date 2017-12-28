@@ -159,8 +159,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             alert(a['name'] + ' : ' + a['message'] + '__载入失败');
         });
 
-        //开始按钮点击事件的方法
-        l['onclick'] = function () {
+        //开始按钮点击事件的方法l['onclick'] = function () {
+        l['click'] = function () {
         //var go = function () {
             l['style']['display'] = 'none';
             e['play']()['then'](function () {
@@ -337,9 +337,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         };
 
 
-        setTimeout(function () {
-            l.click();
-        }, 0x2);
+        //setTimeout(function () {
+        //    l.click();
+        //}, 0x2);
 
 
         
