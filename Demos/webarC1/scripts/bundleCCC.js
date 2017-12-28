@@ -242,12 +242,12 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             if (q > u) {
                                 /*change*/
                                 //隐藏出现下一步
-                                //var h = document['getElementById']('next');
-                                //h['onclick'] = function () {
-                                //    window['location']['href'] = '/webar/share.php';
-                                //};
-                                //h['style']['display'] = 'block';
-                                //u = -0x1;
+                                var h = document['getElementById']('next');
+                                h['onclick'] = function () {
+                                    window['location']['href'] = '/webar/share.php';
+                                };
+                                h['style']['display'] = 'block';
+                                u = -0x1;
                             }
                         }
                     }
