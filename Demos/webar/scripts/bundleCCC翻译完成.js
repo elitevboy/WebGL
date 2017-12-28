@@ -118,11 +118,6 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         var r = 0x140;
         var p = 0xf0;
         if (SPAR['browser']['ios']) {
-
-            //change
-            //console.log("ios"+ SPAR['browser']['ios']);
-
-
             r = 0x280;
             p = 0x1e0;
         }
@@ -161,7 +156,6 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             console['log']('\x20error', a);
             alert(a['name'] + ' : ' + a['message'] + '__载入失败');
         });
-        //开始按钮点击事件的方法
         l['onclick'] = function () {
             l['style']['display'] = 'none';
             e['play']()['then'](function () {
@@ -335,7 +329,6 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
     }, ![]);
     var u = !![];
 
-    //判断浏览器是安卓还是苹果
     function v() {
         var b = navigator['userAgent'];
         console['log']('device=' + b);
@@ -372,29 +365,11 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         var d = a['indexOf']('?');
         var e = a['substr'](d, c);
         var b = e['split']('=');
-
-        //console.log("a" + a);
-        //console.log("c" + c);
-        //console.log("d" + d);
-        //console.log("e" + e);
-        //console.log("b" + b);
-        //得到URL信息。
-        //ahttp://localhost/GU/webar/myindex.html?id=0
-        //c43
-        //d38
-        //e?id=0
-        //b?id,0
-
-
         if (b['length'] == 0x2) {
             return b[0x1];
         } else {
             return 0x0;
         }
-
-
-
-
     }
 
     function i(b, f, g) {
@@ -409,7 +384,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         a['z'] = a['z'] + e;
         return a;
     }
-    //这是显示扫描框的方法
+
     function o() {
         if (window['innerHeight'] > window['innerWidth']) {
             var c = window['innerWidth'];

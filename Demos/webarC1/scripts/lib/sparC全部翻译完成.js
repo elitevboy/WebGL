@@ -40,11 +40,12 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 		if(!d()){if(!e()){a('\x69\x6e\x64\u0435\x78\x4f\x66');}else{a('\x69\x6e\x64\x65\x78\x4f\x66');}}else{a('\x69\x6e\x64\u0435\x78\x4f\x66');}});
 	c();
 
+
+
+
+
 	typeof exports === 'object' && typeof module !== 'undefined' ? module['exports'] = a() : typeof define === 'function' && define['amd'] ? define(a) : d['SPAR'] = a()
-}
-
-
-(this, function () {
+}(this, function () {
     'use strict';
     var k = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -124,16 +125,14 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 
 
 
-//定义浏览器的方法
+
 	var c = j(function(a) {
         
 	!function (d, c, b) {
 	    if ('object' != 'undefined' && a['exports']) a['exports'] = b();
 	    else if (typeof undefined == 'function' && undefined['amd']) undefined(c, b);
 	    else d[c] = b()
-	}
-
-    (k, 'bowser', function () {
+	}(k, 'bowser', function () {
 	    var a = !![];
 
 	    function c(c) {
@@ -939,6 +938,32 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 
 
     };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5380,34 +5405,35 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 }));
 
 
-/*
 
-//翻译代码
-var patt1 = new RegExp("_0x24fc\\(\'.+?\'....\'\\)", "g");
-var str = "aaa"
-var result, a;
+////翻译代码
+//var patt1 = new RegExp("_0x24fc\\(\'.+?\'....\'\\)", "g");
+//var str = "typeof exports===_0x24fc('0x0','!$YZ')&&typeof module!==_0x24fc('0x1','Xfv5')?module[_0x24fc('0x2','zEtn')]=a():typeof define===_0x24fc('0x3','2Uqq')&&define['amd']?define(a):d[_0x24fc('0x4','4*k*')]=a()}(this,function(){'use strict';var k=typeof window!==_0x24fc('0x5','bVfx')?window:typeof global!==_0x24fc('0x6','4*k*')?global:typeof self!==_0x24fc('0x7','Os0e')?self:{};function j(b,a){return a={'exports':{}},b(a,a[_0x24fc('0x8','He$[')]),a[_0x24fc('0x9','wdpN')]}var z=j(function(a){(function(b){'use strict';var c=b[_0x24fc('0xa','YTdw')]&&function(){try{return Boolean(new Blob())}catch(a){return![]}}();var f=c&&b[_0x24fc('0xb','hjF9')]&&function(){try{return new Blob([new Uint8Array(0x64)])[_0x24fc('0xc',']UC@')]===0x64}catch(a){return![]}}();var e=b[_0x24fc('0xd',')8D(')]||b[_0x24fc('0xe','2VMS')]||b[_0x24fc('0xf','9C^x')]||b[_0x24fc('0x10','W*^N')];var g=/^data:((.*?)(;charset=.*?)?)(;base64)?,/;var d=(c||e)&&b[_0x24fc('0x11','Yhxc')]&&b[_0x24fc('0x12','%X6[')]&&b[_0x24fc('0x13','nclf')]&&function(m){var a,k,n,i,d,h,j,b,l;a=m[_0x24fc('0x14','zEtn')](g);if(!a){throw new Error(_0x24fc('0x15','9C^x'));}k=a[0x2]?a[0x1]:_0x24fc('0x16','y*FF')+(a[0x3]||_0x24fc('0x17','9C^x'));n=!!a[0x4];i=m[_0x24fc('0x18','zEtn')](a[0x0][_0x24fc('0x19','df*7')]);if(n){d=atob(i)}else{d=decodeURIComponent(i)}h=new ArrayBuffer(d[_0x24fc('0x1a','W*^N')]);j=new Uint8Array(h);for(b=0x0;b<d[_0x24fc('0x1b','4iFJ')];b+=0x1){j[b]=d[_0x24fc('0x1c','BN0$')](b)}if(c){return new Blob([f?j:h],{'type':k})}l=new e();l[_0x24fc('0x1d','df*7')](h);return l['getBlob'](k)};if(typeof undefined===_0x24fc('0x1e','lN&Z')&&undefined[_0x24fc('0x1f','YTdw')]){undefined(function(){return d})}else if(_0x24fc('0x20','o]xG')===_0x24fc('0x21','Igky')&&a[_0x24fc('0x22','fZ1Q')]){a['exports']=d}else{b[_0x24fc('0x23','Igky')]=d}}(window))});"
+//var result, a;
 
-do {
+//do {
 
-    result = patt1.exec("aaa");
-    if (result != null) {
+//    result = patt1.exec("typeof exports===_0x24fc('0x0','!$YZ')&&typeof module!==_0x24fc('0x1','Xfv5')?module[_0x24fc('0x2','zEtn')]=a():typeof define===_0x24fc('0x3','2Uqq')&&define['amd']?define(a):d[_0x24fc('0x4','4*k*')]=a()}(this,function(){'use strict';var k=typeof window!==_0x24fc('0x5','bVfx')?window:typeof global!==_0x24fc('0x6','4*k*')?global:typeof self!==_0x24fc('0x7','Os0e')?self:{};function j(b,a){return a={'exports':{}},b(a,a[_0x24fc('0x8','He$[')]),a[_0x24fc('0x9','wdpN')]}var z=j(function(a){(function(b){'use strict';var c=b[_0x24fc('0xa','YTdw')]&&function(){try{return Boolean(new Blob())}catch(a){return![]}}();var f=c&&b[_0x24fc('0xb','hjF9')]&&function(){try{return new Blob([new Uint8Array(0x64)])[_0x24fc('0xc',']UC@')]===0x64}catch(a){return![]}}();var e=b[_0x24fc('0xd',')8D(')]||b[_0x24fc('0xe','2VMS')]||b[_0x24fc('0xf','9C^x')]||b[_0x24fc('0x10','W*^N')];var g=/^data:((.*?)(;charset=.*?)?)(;base64)?,/;var d=(c||e)&&b[_0x24fc('0x11','Yhxc')]&&b[_0x24fc('0x12','%X6[')]&&b[_0x24fc('0x13','nclf')]&&function(m){var a,k,n,i,d,h,j,b,l;a=m[_0x24fc('0x14','zEtn')](g);if(!a){throw new Error(_0x24fc('0x15','9C^x'));}k=a[0x2]?a[0x1]:_0x24fc('0x16','y*FF')+(a[0x3]||_0x24fc('0x17','9C^x'));n=!!a[0x4];i=m[_0x24fc('0x18','zEtn')](a[0x0][_0x24fc('0x19','df*7')]);if(n){d=atob(i)}else{d=decodeURIComponent(i)}h=new ArrayBuffer(d[_0x24fc('0x1a','W*^N')]);j=new Uint8Array(h);for(b=0x0;b<d[_0x24fc('0x1b','4iFJ')];b+=0x1){j[b]=d[_0x24fc('0x1c','BN0$')](b)}if(c){return new Blob([f?j:h],{'type':k})}l=new e();l[_0x24fc('0x1d','df*7')](h);return l['getBlob'](k)};if(typeof undefined===_0x24fc('0x1e','lN&Z')&&undefined[_0x24fc('0x1f','YTdw')]){undefined(function(){return d})}else if(_0x24fc('0x20','o]xG')===_0x24fc('0x21','Igky')&&a[_0x24fc('0x22','fZ1Q')]){a['exports']=d}else{b[_0x24fc('0x23','Igky')]=d}}(window))});");
 
-        str = str.replace(result[0], "'" + eval(result[0]) + "'");
+//    if (result != null) {
 
-        //if (result.index == 2) {
-        //    console.log(
-        //        "str"
-        //    );
-        //}
+//        //a = eval(result[0]);
+
+//        str = str.replace(result[0], "'" + eval(result[0]) + "'");
+
+//        //if (result.index == 2) {
+//        //    console.log(
+//        //        "str"
+//        //    );
+//        //}
     
-    }
+//    }
 
-}
-while (result != null);
+//}
+//while (result != null);
 
-console.log(str);
+//console.log(str);
 
-*/
 
 
 
