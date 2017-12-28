@@ -304,9 +304,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                     }, function (a) {
                         if (a['lengthComputable']) {
                             var b = a['loaded'] / a['total'] * 0x64;
-                            document['getElementById']('loading')['innerHTML'] = '易尚AR' + Math['round'](b, 0x2) + '%';
+                            document['getElementById']('loading')['innerHTML'] = '请稍候' + Math['round'](b, 0x2) + '%';
                             if (Math['round'](b, 0x2) >= 0x63) {
-                                document['getElementById']('loading')['innerHTML'] = '';
+                                document['getElementById']('loading')['innerHTML'] = '易尚AR';
                                 w();
                             }
                         }
