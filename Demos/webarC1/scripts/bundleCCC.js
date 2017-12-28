@@ -151,20 +151,19 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             u['style']['display'] = 'none';
             B['style']['display'] = 'none';
 
+            /*change*/
+            //隐藏开始图标并启动点击方法
+            //l['style']['display'] = 'block';
             l.click();
 
-            /*change*/
-            //隐藏开始图标
-            //l['style']['display'] = 'block';
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
             console['log']('\x20error', a);
             alert(a['name'] + ' : ' + a['message'] + '__载入失败');
         });
 
-        //开始按钮点击事件的方法l['onclick'] = function () {
+        //开始按钮点击事件的方法
         l['onclick'] = function () {
-        //var go = function () {
             l['style']['display'] = 'none';
             e['play']()['then'](function () {
                 var E = new THREE[('Clock')]();
@@ -305,9 +304,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                     }, function (a) {
                         if (a['lengthComputable']) {
                             var b = a['loaded'] / a['total'] * 0x64;
-                            document['getElementById']('loading')['innerHTML'] = '加载中...' + Math['round'](b, 0x2) + '%';
+                            document['getElementById']('loading')['innerHTML'] = '易尚AR' + Math['round'](b, 0x2) + '%';
                             if (Math['round'](b, 0x2) >= 0x63) {
-                                document['getElementById']('loading')['innerHTML'] = '惊喜就在眼前啦~';
+                                document['getElementById']('loading')['innerHTML'] = '';
                                 w();
                             }
                         }
@@ -338,18 +337,6 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 console['log']('catch\x20error', a);
             });
         };
-
-
-        //setTimeout(function () {
-        //    l['style']['display'] = 'none';
-        //    l.click();
-        //}, 0x1388);
-
-
-        
-
-        //go();
-
 
     }, ![]);
     var u = !![];
