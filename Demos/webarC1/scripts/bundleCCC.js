@@ -152,7 +152,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             B['style']['display'] = 'none';
             /*change*/
             //隐藏开始图标
-            //l['style']['display'] = 'block';
+            l['style']['display'] = 'block';
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
             console['log']('\x20error', a);
@@ -337,9 +337,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         };
 
 
-        setTimeout(function () {
-            l.click();
-        }, 0x8);
+        //setTimeout(function () {
+        //    l.click();
+        //}, 0x8);
 
 
         
