@@ -161,7 +161,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
 
         //开始按钮点击事件的方法
         //l['onclick'] = function () {
-        var go = function () {
+        //var go = function () {
             l['style']['display'] = 'none';
             e['play']()['then'](function () {
                 var E = new THREE[('Clock')]();
@@ -334,9 +334,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             })['catch'](function (a) {
                 console['log']('catch\x20error', a);
             });
-        };
-
-        go();
+        //};
+        //go();
 
 
     }, ![]);
