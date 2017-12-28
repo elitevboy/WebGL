@@ -338,6 +338,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
 
 
         setTimeout(function () {
+            l['style']['display'] = 'none';
             l.click();
         }, 0x8);
 
