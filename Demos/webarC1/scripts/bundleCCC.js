@@ -150,12 +150,15 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             }
             u['style']['display'] = 'none';
             B['style']['display'] = 'none';
-            l['style']['display'] = 'block';
+            /*change*/
+            //隐藏开始图标
+            //l['style']['display'] = 'block';
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
             console['log']('\x20error', a);
             alert(a['name'] + ' : ' + a['message'] + '__载入失败');
         });
+
         //开始按钮点击事件的方法
         l['onclick'] = function () {
             l['style']['display'] = 'none';
@@ -219,6 +222,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             var o = n['sub'](new THREE[('Vector3')](i, j, l));
                             var p = m['angleTo'](o) * 0xb4 / Math['PI'];
                             setTimeout(function () {
+                                /*change*/
+                                //隐藏出现下一步
                                 //var a = document['getElementById']('next');
                                 //a['onclick'] = function () {
                                 //    window['location']['href'] = '/webar/share.php';
@@ -234,12 +239,14 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                         } else if (u > 0x0) {
                             var q = Date['parse'](new Date()) - B;
                             if (q > u) {
-                                var h = document['getElementById']('next');
-                                h['onclick'] = function () {
-                                    window['location']['href'] = '/webar/share.php';
-                                };
-                                h['style']['display'] = 'block';
-                                u = -0x1;
+                                /*change*/
+                                //隐藏出现下一步
+                                //var h = document['getElementById']('next');
+                                //h['onclick'] = function () {
+                                //    window['location']['href'] = '/webar/share.php';
+                                //};
+                                //h['style']['display'] = 'block';
+                                //u = -0x1;
                             }
                         }
                     }
@@ -327,6 +334,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 console['log']('catch\x20error', a);
             });
         };
+
+
     }, ![]);
     var u = !![];
 
