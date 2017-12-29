@@ -276,7 +276,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             });
                             p['add'](a);
                             f = a;
-                            f['scale']['set'](0.003, 0.003, 0.003);
+                            //f['scale']['set'](0.003, 0.003, 0.003);
+                            f['scale']['set'](0.03, 0.03, 0.03);
                             t = !![];
                             var b = new THREE[('Vector3')]();
                             var h = c['quaternion'];
