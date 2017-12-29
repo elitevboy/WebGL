@@ -257,7 +257,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 //https://staticfile-cdn.sightp.com/sightp/webar/trex_v3.fbx
                 var y = function a() {
                     var b = new THREE[('FBXLoader')]();
-                    b['load']('https://elitevboy.github.io/WebGL/Demos/webarC1/wang/man4.fbx', function (a) {
+                    b['load']('https://elitevboy.github.io/WebGL/Demos/webarC1/wang/colth.fbx', function (a) {
                         var b = new THREE[('TextureLoader')]();
                         var d = b['load']('//sightppp.oss-cn-shanghai.aliyuncs.com/webar/ashe_base_2011_tx_cm.jpg', function (s) {
                             if (a['animations'] != undefined && a['animations']['length'] > 0x0) {
