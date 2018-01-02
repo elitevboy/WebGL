@@ -153,8 +153,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
 
             /*change*/
             //隐藏开始图标并启动点击方法
-            //l['style']['display'] = 'block';
-            l.click();
+            l['style']['display'] = 'block';
+            //l.click();
 
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
