@@ -275,7 +275,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                                     //change 0x1
                                     a['material']['opacity'] = 0x1;
                                     //change
-                                    //a['material']['side'] = THREE['DoubleSide'];
+                                    a['material']['side'] = THREE['DoubleSide'];
                                     //console['log']('Find Mesh' + a);
                                 }
                             });
