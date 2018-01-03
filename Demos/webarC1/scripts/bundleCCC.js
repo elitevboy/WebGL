@@ -272,6 +272,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             a['traverse'](function (a) {
                                 if (a instanceof THREE['Mesh']) {
                                     a['material']['transparent'] = !![];
+                                    if (!![]) {
+                                        window.alert("OK");
+                                    }
                                     //change 0x1
                                     a['material']['opacity'] = 0x1;
                                     //change
