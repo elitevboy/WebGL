@@ -259,7 +259,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 //sightppp.oss-cn-shanghai.aliyuncs.com/webar/ashe_base_2011_tx_cm.jpg
                 var y = function a() {
                     var b = new THREE[('FBXLoader')]();
-                    b['load']('https://elitevboy.github.io/WebGL/Demos/webarC1/wang/t97.fbx', function (a) {
+                    b['load']('https://elitevboy.github.io/WebGL/Demos/webarC1/wang/t96.fbx', function (a) {
                         var b = new THREE[('TextureLoader')]();
                         var d = b['load']('img.png', function (s) {
                             if (a['animations'] != undefined && a['animations']['length'] > 0x0) {
@@ -272,7 +272,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             a['traverse'](function (a) {
                                 if (a instanceof THREE['Mesh']) {
                                     a['material']['transparent'] = !![];
-                                    a['material']['opacity'] = 0x1;
+                                    a['material']['opacity'] = 0x0;
                                     //change
                                     a['material']['side'] = THREE['DoubleSide'];
                                     //console['log']('Find Mesh' + a);
