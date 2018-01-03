@@ -256,11 +256,12 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                     }
                 });
                 //https://staticfile-cdn.sightp.com/sightp/webar/trex_v3.fbx
+                //sightppp.oss-cn-shanghai.aliyuncs.com/webar/ashe_base_2011_tx_cm.jpg
                 var y = function a() {
                     var b = new THREE[('FBXLoader')]();
                     b['load']('https://elitevboy.github.io/WebGL/Demos/webarC1/wang/t95.fbx', function (a) {
                         var b = new THREE[('TextureLoader')]();
-                        var d = b['load']('//sightppp.oss-cn-shanghai.aliyuncs.com/webar/ashe_base_2011_tx_cm.jpg', function (s) {
+                        var d = b['load']('img.png', function (s) {
                             if (a['animations'] != undefined && a['animations']['length'] > 0x0) {
                                 a['mixer'] = new THREE[('AnimationMixer')](a);
                                 k['push'](a['mixer']);
@@ -272,7 +273,9 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                                 if (a instanceof THREE['Mesh']) {
                                     a['material']['transparent'] = !![];
                                     a['material']['opacity'] = 0x1;
-                                    console['log']('Find Mesh' + a);
+                                    //change
+                                    a['material']['side'] = THREE['DoubleSide'];
+                                    //console['log']('Find Mesh' + a);
                                 }
                             });
                             p['add'](a);
