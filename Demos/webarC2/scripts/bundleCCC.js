@@ -261,7 +261,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                     var b = new THREE[('FBXLoader')]();
                     b['load']('https://elitevboy.github.io/WebGL/Demos/webarC1/wang/trex.fbx', function (a) {
                         var b = new THREE[('TextureLoader')]();
-                        var d = b['load']('wang/img.png', function (s) {
+                        var d = b['load']('img.png', function (s) {
                             if (a['animations'] != undefined && a['animations']['length'] > 0x0) {
                                 a['mixer'] = new THREE[('AnimationMixer')](a);
                                 k['push'](a['mixer']);
