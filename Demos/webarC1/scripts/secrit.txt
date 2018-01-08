@@ -1,4 +1,4 @@
-bundle的密码
+﻿bundle的密码
 _0x5149('0x0', 'pt0$') == 'exports' ;
  _0x5149('0x1', 'fQT)') == 'call' ;
  _0x5149('0x2', '&e!y') == 'exports' ;
