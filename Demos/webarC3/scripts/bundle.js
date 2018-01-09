@@ -154,8 +154,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             } else {
                 e['height'] = e['width'] / a;
             }
-            u['style']['display'] = 'none';
-            B['style']['display'] = 'none';
+            //u['style']['display'] = 'none';
+            //B['style']['display'] = 'none';
 
             /*change*/
             //隐藏开始图标并启动点击方法
