@@ -166,10 +166,10 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
 
             e['play']()['then'](function () {
                 var E = new THREE[('Clock')]();
-                //判断是直接访问还是扫码访问 a=0为直接
-                if (a != 0x0) {
-                    o();
-                }
+                ////判断是直接访问还是扫码访问 a=0为直接
+                //if (a != 0x0) {
+                //    o();
+                //}
                 var l = new SPAR[('THREERenderer')](e);
                 m['appendChild'](l['domElement']);
                 var C = (j - e['width']) / 0x2;
