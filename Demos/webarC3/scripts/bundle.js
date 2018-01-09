@@ -76,6 +76,14 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
     var c = ![],
         s = ![],
         t = 0.2;
+
+    if (c) {
+        window.alert("true");
+    } else {
+        window.alert("false");
+    }
+    
+
     var A, k = 0x0,
         l = 0x0,
         m = 0x0;
@@ -115,8 +123,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         var B = document['getElementById']('loadtext');
         var l = document['getElementById']('start');
         //console['log']('container' + m['clientWidth'] + ',' + m['clientHeight'] + ',' + window['innerHeight'] + ',' + window['innerWidth']);
-        var r = 0x140;
-        var p = 0xf0;
+        var r = 0x140;  //320
+        var p = 0xf0;  //240
         if (SPAR['browser']['ios']) {
             r = 0x280;
             p = 0x1e0;
