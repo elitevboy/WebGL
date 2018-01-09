@@ -154,8 +154,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             } else {
                 e['height'] = e['width'] / a;
             }
-            //u['style']['display'] = 'none';
-            //B['style']['display'] = 'none';
+            u['style']['display'] = 'none';
+            B['style']['display'] = 'none';
 
             /*change*/
             //隐藏开始图标并启动点击方法
@@ -164,8 +164,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             //l.click();
 
 
-            var ll = new SPAR[('THREERenderer')](e);
-            m['appendChild'](ll['domElement']);
+
 
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
@@ -178,6 +177,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             l['style']['display'] = 'none';
             e['play']()['then'](function () {
                 var E = new THREE[('Clock')]();
+                //判断是直接访问还是扫码访问 a=0为直接
                 if (a != 0x0) {
                     o();
                 }
@@ -188,83 +188,93 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 console['log']('offset=' + C + ',' + x);
                 l['domElement']['style']['marginLeft'] = C;
                 l['domElement']['style']['marginTop'] = x;
-                var p = l['scene'];
-                var c = l['_camera'];
-                var F = 0x0;
-                c['position']['set'](0x0, 0x0, 0xa);
-                c['lookAt']({
-                    'x': 0x0,
-                    'y': 0x0,
-                    'z': 0x0
-                });
-                var r = 0x0;
-                A = new THREE[('DeviceOrientationControls')](c);
-                if (window['DeviceOrientationEvent']) {
-                    window['addEventListener']('deviceorientation', function (a) {
-                        r = a['alpha'];
-                        A['update']();
-                    }, ![]);
-                } else {
-                    console['log']('您的浏览器不支持DeviceOrientation');
-                }
-                var B = 0x0;
-                var u = 0x1388;
-                var D = ![];
-                l['start'](function () {
-                    if (a != 0x0 && b != 0x0) {
-                        d += 0x2;
-                        if (d > b) {
-                            document['getElementById']('showimg02')['style']['height'] = b + 'px';
-                            d = 0x0;
-                        } else {
-                            document['getElementById']('showimg02')['style']['height'] = d + 'px';
-                        }
-                    }
-                    if (t) {
-                        for (var g = 0x0; g < k['length']; g++) {
-                            k[g]['update'](E['getDelta']());
-                        }
-                        if (!D) {
-                            var e = new THREE['Vector3']();
-                            e['copy'](new THREE[('Vector3')](0x0, 0x0, -0x1))['applyQuaternion'](c['quaternion']);
-                            e['add'](e['multiplyScalar'](0xc8));
-                            var i = c['position']['x'];
-                            var j = c['position']['y'];
-                            var l = c['position']['z'];
-                            var m = e;
-                            var n = new THREE[('Vector3')](f['position']['x'], f['position']['y'], f['position']['z']);
-                            var o = n['sub'](new THREE[('Vector3')](i, j, l));
-                            var p = m['angleTo'](o) * 0xb4 / Math['PI'];
-                            setTimeout(function () {
-                                /*change*/
-                                //隐藏出现下一步
-                                //var a = document['getElementById']('next');
-                                //a['onclick'] = function () {
-                                //    window['location']['href'] = '/webar/share.php';
-                                //};
-                                //a['style']['display'] = 'block';
-                                //document['getElementById']('loading')['style']['display'] = 'none';
-                            }, 0x2710);
-                            if (p < 0x14) {
-                                D = !![];
-                                document['getElementById']('loading')['innerHTML'] = '';
-                                B = Date['parse'](new Date());
-                            }
-                        } else if (u > 0x0) {
-                            var q = Date['parse'](new Date()) - B;
-                            if (q > u) {
-                                /*change*/
-                                //隐藏出现下一步
-                                //var h = document['getElementById']('next');
-                                //h['onclick'] = function () {
-                                //    window['location']['href'] = '/webar/share.php';
-                                //};
-                                //h['style']['display'] = 'block';
-                                //u = -0x1;
-                            }
-                        }
-                    }
-                });
+
+
+
+                //var p = l['scene'];
+                //var c = l['_camera'];
+                //var F = 0x0;
+                //c['position']['set'](0x0, 0x0, 0xa);
+                //c['lookAt']({
+                //    'x': 0x0,
+                //    'y': 0x0,
+                //    'z': 0x0
+                //});
+                //var r = 0x0;
+                //A = new THREE[('DeviceOrientationControls')](c);
+                //if (window['DeviceOrientationEvent']) {
+                //    window['addEventListener']('deviceorientation', function (a) {
+                //        r = a['alpha'];
+                //        A['update']();
+                //    }, ![]);
+                //} else {
+                //    console['log']('您的浏览器不支持DeviceOrientation');
+                //}
+                //var B = 0x0;
+                //var u = 0x1388;
+                //var D = ![];
+                //l['start'](function () {
+                //    if (a != 0x0 && b != 0x0) {
+                //        d += 0x2;
+                //        if (d > b) {
+                //            document['getElementById']('showimg02')['style']['height'] = b + 'px';
+                //            d = 0x0;
+                //        } else {
+                //            document['getElementById']('showimg02')['style']['height'] = d + 'px';
+                //        }
+                //    }
+                //    if (t) {
+                //        for (var g = 0x0; g < k['length']; g++) {
+                //            k[g]['update'](E['getDelta']());
+                //        }
+                //        if (!D) {
+                //            var e = new THREE['Vector3']();
+                //            e['copy'](new THREE[('Vector3')](0x0, 0x0, -0x1))['applyQuaternion'](c['quaternion']);
+                //            e['add'](e['multiplyScalar'](0xc8));
+                //            var i = c['position']['x'];
+                //            var j = c['position']['y'];
+                //            var l = c['position']['z'];
+                //            var m = e;
+                //            var n = new THREE[('Vector3')](f['position']['x'], f['position']['y'], f['position']['z']);
+                //            var o = n['sub'](new THREE[('Vector3')](i, j, l));
+                //            var p = m['angleTo'](o) * 0xb4 / Math['PI'];
+                //            setTimeout(function () {
+                //                /*change*/
+                //                //隐藏出现下一步
+                //                //var a = document['getElementById']('next');
+                //                //a['onclick'] = function () {
+                //                //    window['location']['href'] = '/webar/share.php';
+                //                //};
+                //                //a['style']['display'] = 'block';
+                //                //document['getElementById']('loading')['style']['display'] = 'none';
+                //            }, 0x2710);
+                //            if (p < 0x14) {
+                //                D = !![];
+                //                document['getElementById']('loading')['innerHTML'] = '';
+                //                B = Date['parse'](new Date());
+                //            }
+                //        } else if (u > 0x0) {
+                //            var q = Date['parse'](new Date()) - B;
+                //            if (q > u) {
+                //                /*change*/
+                //                //隐藏出现下一步
+                //                //var h = document['getElementById']('next');
+                //                //h['onclick'] = function () {
+                //                //    window['location']['href'] = '/webar/share.php';
+                //                //};
+                //                //h['style']['display'] = 'block';
+                //                //u = -0x1;
+                //            }
+                //        }
+                //    }
+                //});
+
+
+
+
+
+
+                //加载模型的方法
                 //https://staticfile-cdn.sightp.com/sightp/webar/trex_v3.fbx
                 //sightppp.oss-cn-shanghai.aliyuncs.com/webar/ashe_base_2011_tx_cm.jpg
                 var y = function a() {
@@ -333,7 +343,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                     });
                 };
                 if (a == 0x0) {
-                    y();
+                    //y();
                 } else {
                     var v = new SPAR[('Recognizer')](e);
                     v['start'](h['a'], function (a, b) {
@@ -350,6 +360,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                         }
                     });
                 }
+                //音乐
                 z['style']['display'] = 'none';
             })['catch'](function (a) {
                 console['log']('catch\x20error', a);
