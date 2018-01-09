@@ -73,15 +73,13 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
     });
     var g = f(0x1);
     var h = f['n'](g);
+
+    //  ![]  c = false
     var c = ![],
         s = ![],
         t = 0.2;
 
-    if (c) {
-        window.alert("true");
-    } else {
-        window.alert("false");
-    }
+
     
 
     var A, k = 0x0,
@@ -166,8 +164,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             //l.click();
 
 
-            var l = new SPAR[('THREERenderer')](e);
-            m['appendChild'](l['domElement']);
+            var ll = new SPAR[('THREERenderer')](e);
+            m['appendChild'](ll['domElement']);
 
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
