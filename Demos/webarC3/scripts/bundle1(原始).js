@@ -124,8 +124,8 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
         var r = 0x140;  //320
         var p = 0xf0;  //240
         if (SPAR['browser']['ios']) {
-            r = 0x280;  //640
-            p = 0x1e0;  //480
+            r = 0x280;
+            p = 0x1e0;
         }
         var j = window['innerWidth'];
         var g = window['innerHeight'];
@@ -161,29 +161,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             //隐藏开始图标并启动点击方法
             //l['style']['display'] = 'block';
             //这是自动启动ar
-            //l.click();
-
-
-            e['play']()['then'](function () {
-                var E = new THREE[('Clock')]();
-                //判断是直接访问还是扫码访问 a=0为直接
-                if (a != 0x0) {
-                    o();
-                }
-                var l = new SPAR[('THREERenderer')](e);
-                m['appendChild'](l['domElement']);
-                var C = (j - e['width']) / 0x2;
-                var x = (g - e['height']) / 0x2;
-                console['log']('offset=' + C + ',' + x);
-                l['domElement']['style']['marginLeft'] = C;
-                l['domElement']['style']['marginTop'] = x;
-
-
-
-
-            });
-
-
+            l.click();
 
 
 
@@ -367,33 +345,29 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 if (a == 0x0) {
                     //y();
                 } else {
-
-                    //var v = new SPAR[('Recognizer')](e);
-                    //v['start'](h['a'], function (a, b) {
-                    //    if (a) {
-                    //        s['innerHTML'] = a['message'];
-                    //        q = 0x0;
-                    //    } else {
-                    //        q = 0x1;
-                    //        s['innerHTML'] = '匹配成功';
-                    //        document['getElementById']('showimg01')['style']['display'] = 'none';
-                    //        document['getElementById']('showimg02')['style']['display'] = 'none';
-                    //        v['stop']();
-                    //        y();
-                    //    }
-                    //});
-
+                    var v = new SPAR[('Recognizer')](e);
+                    v['start'](h['a'], function (a, b) {
+                        if (a) {
+                            s['innerHTML'] = a['message'];
+                            q = 0x0;
+                        } else {
+                            q = 0x1;
+                            s['innerHTML'] = '匹配成功';
+                            document['getElementById']('showimg01')['style']['display'] = 'none';
+                            document['getElementById']('showimg02')['style']['display'] = 'none';
+                            v['stop']();
+                            y();
+                        }
+                    });
                 }
                 //音乐
-                //z['style']['display'] = 'none';
+                z['style']['display'] = 'none';
             })['catch'](function (a) {
                 console['log']('catch\x20error', a);
             });
         };
 
     }, ![]);
-
-
     var u = !![];
 
     //判断浏览器是安卓还是苹果
