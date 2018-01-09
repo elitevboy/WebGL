@@ -307,7 +307,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             e['position']['set'](g['x'], g['y'], g['z']);
                             n = new THREE[('OrbitControls')](f, document['querySelector']('#container'));
                             n['target'] = i(f, new THREE[('Vector3')](0x0, 0x0, 0x1), 0.1);
-                            n['rotateSpeed'] = 0.1;
+                            n['rotateSpeed'] = 0.6;
                         });
                     }, function (a) {
                         if (a['lengthComputable']) {
