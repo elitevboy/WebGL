@@ -2,6 +2,8 @@
 var z = document['getElementById']('target');
 
 
+var c = ![];
+
 var r = 0x140;  //320
 var p = 0xf0;  //240
 if (SPAR['browser']['ios']) {
