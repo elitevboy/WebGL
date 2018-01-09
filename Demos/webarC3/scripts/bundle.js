@@ -157,6 +157,10 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             //这是自动启动ar
             //l.click();
 
+
+            var l = new SPAR[('THREERenderer')](e);
+            m['appendChild'](l['domElement']);
+
         })['catch'](function (a) {
             u['innerHTML'] = '载入失败';
             console['log']('\x20error', a);
@@ -306,7 +310,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                             p['add'](e);
                             e['position']['set'](g['x'], g['y'], g['z']);
                             n = new THREE[('OrbitControls')](f, document['querySelector']('#container'));
-                            n['target'] = i(f, new THREE[('Vector3')](0x0, 0x1, 0x0), 0.1);
+                            n['target'] = i(f, new THREE[('Vector3')](0x0, 0x0, 0x1), 0.1);
                             n['rotateSpeed'] = 0.6;
                         });
                     }, function (a) {
