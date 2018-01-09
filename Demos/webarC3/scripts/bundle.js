@@ -163,7 +163,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
             //这是自动启动ar
             //l.click();
 
-
+            l['style']['display'] = 'none';
             e['play']()['then'](function () {
                 var E = new THREE[('Clock')]();
                 ////判断是直接访问还是扫码访问 a=0为直接
@@ -178,6 +178,7 @@ var _0x5149=function(b,f){b=b-0x0;var a=_0x1495[b];if(_0x5149['initialized']===u
                 l['domElement']['style']['marginLeft'] = C;
                 l['domElement']['style']['marginTop'] = x;
 
+                z['style']['display'] = 'none';
 
 
 
