@@ -1,5 +1,5 @@
 ﻿var m = document['getElementById']('container');
-var z = document['getElementById']('target');
+//var z = document['getElementById']('target');
 
 
 var c = ![];
@@ -48,7 +48,7 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
         l['domElement']['style']['marginLeft'] = C;
         l['domElement']['style']['marginTop'] = x;
 
-        z['style']['display'] = 'none';
+        //z['style']['display'] = 'none';
 
     });
 
