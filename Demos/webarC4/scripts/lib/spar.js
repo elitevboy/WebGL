@@ -45,6 +45,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 
 
 (this, function () {
+
+
     'use strict';
     var k = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -115,14 +117,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             }
         }(window))
     });
-
-
-
-
-
-
-
-
 
 //定义浏览器的方法
 	var c = j(function(a) {
@@ -571,33 +565,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 	    return b
 	})
 	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var u = {};
     var W = function () {
         function b(a) {
@@ -702,18 +669,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             throw new TypeError('Cannot call a class as a function');
         }
     };
-
-
-
-
-
-
-
-
-
-
-
-
     var h = function () {
         function a(d, c) {
             for (var b = 0x0; b < c['length']; b++) {
@@ -844,13 +799,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
     }();
 
 
-
-
-
-
-
-
-
     'use strict';
     var p = !![];
     var n = !![];
@@ -889,15 +837,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             var a = c['match'](d);
             return a && a['length'] >= b && parseInt(a[b], 0xa);
         },
-
-
-
-
-
-
-
-
-
         'detectBrowser': function (c) {
             var b = c && c['navigator'];
             var a = {};
@@ -935,14 +874,7 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             }
             return a;
         }
-
-
-
     };
-
-
-
-
 
     var b = {
         'log': d['log'],
@@ -953,6 +885,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         'shimCreateObjectURL': d['shimCreateObjectURL'],
         'detectBrowser': d['detectBrowser']['bind'](d)
     };
+
+
     'use strict';
     var i = b['log'];
     var H = function (c) {
@@ -1174,20 +1108,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
     };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     'use strict';
     var r = b['log'];
     var e = {
@@ -1260,14 +1180,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
                 };
             }
         },
-
-
-
-
-
-
-
-
 
         'shimGetSendersWithDtmf': function (a) {
             if (typeof a === 'object' && a['RTCPeerConnection'] && !('getSenders' in a['RTCPeerConnection']['prototype']) && 'createDTMFSender' in a['RTCPeerConnection']['prototype']) {
@@ -1397,12 +1309,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
                 }
             }
         },
-
-
-
-
-
-
 
         'shimAddTrackRemoveTrack': function (a) {
             var e = b['detectBrowser'](a);
@@ -1602,11 +1508,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             };
         },
 
-
-
-
-
-
         'shimPeerConnection': function (a) {
             var e = b['detectBrowser'](a);
             if (!a['RTCPeerConnection']) {
@@ -1755,18 +1656,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             };
         }
     };
-
-
-
-
-
-
-
-
-
-
-
-
     var t = {
         'shimMediaStream': e['shimMediaStream'],
         'shimOnTrack': e['shimOnTrack'],
@@ -2251,18 +2140,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     'use strict';
     function v(b, e, f, g, h) {
         var c = a['writeRtpDescription'](b['kind'], e);
@@ -2398,23 +2275,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         }
         return ! b;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var A = function(c, d) {
         var b = function(b) {
             var h = this;
@@ -3481,6 +3341,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         };
         return b;
     };
+
+
     'use strict';
     var B = function(b) {
         var a = b && b['navigator'];
@@ -3503,6 +3365,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             });
         };
     };
+
+
     'use strict';
     var C = {
         'shimGetUserMedia': B,
@@ -3553,6 +3417,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             }
         }
     };
+
+
     'use strict';
     var o = b['log'];
     var E = function(f) {
@@ -3743,6 +3609,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             a['mediaDevices']['getUserMedia'](c)['then'](d, f);
         };
     };
+
+
     'use strict';
     var l = {
         'shimOnTrack': function(a) {
@@ -3901,31 +3769,15 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         }
     };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var G = {
         'shimOnTrack': l['shimOnTrack'],
         'shimSourceObject': l['shimSourceObject'],
         'shimPeerConnection': l['shimPeerConnection'],
         'shimGetUserMedia': E
     };
+
+
+
     'use strict';
     var f = {
         'shimLocalStreamsAPI': function (a) {
@@ -4160,6 +4012,9 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         'shimRTCIceServerUrls': f['shimRTCIceServerUrls'],
         'shimTrackEventTransceiver': f['shimTrackEventTransceiver']
     };
+
+
+
     'use strict';
     function U(e, a, f) {
         if (!e['RTCPeerConnection']) {
@@ -4278,6 +4133,9 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             };
         }
     };
+
+
+
     'use strict';
     var L = function (n, l) {
         var a = n && n['window'];
@@ -4371,6 +4229,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         }
         return e;
     };
+
+
     'use strict';
     var T = L({
         'window': k['window']
@@ -4399,15 +4259,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         }]);
         return a;
     }();
-
-
-
-
-
-
-
-
-
 
     var P = j(function (a, b) {
         'use strict'; (function (R) {
@@ -5127,12 +4978,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         }(k));
     });
 
-
-
-
-
-
-
     function S(b, d) {
         var c = Object['keys'](b)['sort']()['map'](function (a) {
             return a + b[a];
@@ -5147,17 +4992,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         a['signature'] = S(a, c);
         return a;
     }
-
-
-
-
-
-
-
-
-
-
-
 
     var Q = function () {
         function a(b, c, d) {
@@ -5286,17 +5120,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         return a;
     }();
 
-
-
-
-
-
-
-
-
-
-
-
     var w = function a(b, c) {
         return {
             'cameraFOV': 0x28,
@@ -5306,6 +5129,7 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             'cameraPosition': new THREE[('Vector3')](0x0, 0x0, 0x5)
         };
     };
+
     var x = function () {
         function a(c, b) {
             g(this, a);
@@ -5360,6 +5184,7 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
         }]);
         return a;
     }();
+
     var D = {
         'VideoDevice': s,
         'CameraVideoSource': O,
@@ -5388,7 +5213,9 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             }
         }
     };
-    return D;
+
+    //return D;
+
 }));
 
 
