@@ -47,6 +47,9 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
 
 
 
+
+
+
         var l = new SPAR[('THREERenderer')](e);
         m['appendChild'](l['domElement']);
         var C = (j - e['width']) / 0x2;

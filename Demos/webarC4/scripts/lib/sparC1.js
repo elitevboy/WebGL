@@ -5137,7 +5137,8 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
             this['_videoDevice'] = c;
             var d = c['width'];
             var e = c['height'];
-            b = Object['assign']({},w(d, e), b);
+            b = Object['assign']({},
+            w(d, e), b);
             var k = this['_scene'] = new THREE['Scene']();
             var j = this['_camera'] = new THREE['PerspectiveCamera'](b['cameraFOV'], b['cameraAspect'], b['cameraNear'], b['cameraFar']);
             j['position']['copy'](b['cameraPosition']);
