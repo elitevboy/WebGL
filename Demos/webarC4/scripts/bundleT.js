@@ -1,5 +1,5 @@
 ﻿var m = document['getElementById']('container');
-var z = document['getElementById']('target');
+//var z = document['getElementById']('target');
 
 
 var c = ![];
@@ -39,7 +39,14 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
     }
 
     e['play']()['then'](function () {
-        var E = new THREE[('Clock')]();
+        //var E = new THREE[('Clock')]();
+
+
+
+
+
+
+
         var l = new SPAR[('THREERenderer')](e);
         m['appendChild'](l['domElement']);
         var C = (j - e['width']) / 0x2;
@@ -48,7 +55,7 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
         l['domElement']['style']['marginLeft'] = C;
         l['domElement']['style']['marginTop'] = x;
 
-        z['style']['display'] = 'none';
+        //z['style']['display'] = 'none';
 
     });
 
