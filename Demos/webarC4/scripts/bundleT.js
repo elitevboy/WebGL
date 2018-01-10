@@ -1,4 +1,6 @@
 ﻿var m = document['getElementById']('container');
+var z = document['getElementById']('target');
+
 
 var c = ![];
 
@@ -10,7 +12,7 @@ if (SPAR['browser']['ios']) {
 }
 var j = window['innerWidth'];
 var g = window['innerHeight'];
-console['log']('VideoDevice\x20' + j + ',' + g);
+//console['log']('VideoDevice\x20' + j + ',' + g);
 var e = new SPAR[('VideoDevice')]({
     'width': j,
     'height': g
@@ -37,6 +39,7 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
     }
 
     e['play']()['then'](function () {
+        var E = new THREE[('Clock')]();
         var l = new SPAR[('THREERenderer')](e);
         m['appendChild'](l['domElement']);
         var C = (j - e['width']) / 0x2;
@@ -44,6 +47,8 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
         console['log']('offset=' + C + ',' + x);
         l['domElement']['style']['marginLeft'] = C;
         l['domElement']['style']['marginTop'] = x;
+
+        z['style']['display'] = 'none';
 
     });
 
