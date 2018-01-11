@@ -5091,10 +5091,10 @@
 
     var w = function a(b, c) {
         return {
-            'cameraFOV': 0x28,
+            'cameraFOV': 0x28,  //40
             'cameraAspect': b / c,
             'cameraNear': 0.1,
-            'cameraFar': 0x3e8,
+            'cameraFar': 0x3e8,  //1000
             'cameraPosition': new THREE[('Vector3')](0x0, 0x0, 0x5)
         };
     };
@@ -5105,12 +5105,13 @@
             this['_videoDevice'] = c;
             var d = c['width'];
             var e = c['height'];
+            //Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
             b = Object['assign']({},w(d, e), b);
             var k = this['_scene'] = new THREE['Scene']();
             var j = this['_camera'] = new THREE['PerspectiveCamera'](b['cameraFOV'], b['cameraAspect'], b['cameraNear'], b['cameraFar']);
             j['position']['copy'](b['cameraPosition']);
             var f = this['_renderer'] = new THREE[('WebGLRenderer')]({
-                'alpha': !![]
+                'alpha': ![]
             });
             f['setSize'](d, e);
             f['autoClear'] = ![];
