@@ -36,7 +36,7 @@ var C = {
         } : 'enviroment'
     }
 };
-e['setVideoSource'](new SPAR[('CameraVideoSource')]())['then'](function () {
+e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
     console['log']('video\x20size' + e['videoWidth'] + '--' + e['videoHeight']);
     console['log']('video\x20element\x20size' + e['width'] + '--' + e['height']);
     var a = e['videoWidth'] / e['videoHeight'];
