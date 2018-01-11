@@ -680,6 +680,8 @@
         'captureType': 'image/jpeg',
         'captureQuality': 0.5
     };
+
+    //VideoDevice
     var s = function () {
         function a(b) {
             g(this, a);
@@ -4223,7 +4225,11 @@
     var T = L({
         'window': k['window']
     });
+
+    //得到相机
     var N = window['navigator']['mediaDevices'];
+
+    //CameraVideoSource的方法
     var O = function () {
         function a(b) {
             g(this, a);
@@ -5098,10 +5104,12 @@
             'cameraPosition': new THREE[('Vector3')](0x0, 0x0, 0x5)
         };
     };
-
+    
+    //THREERenderer 
     var x = function () {
         function a(c, b) {
             g(this, a);
+            //c 里面有视频元素  来自 VideoDevice
             this['_videoDevice'] = c;
             var d = c['width'];
             var e = c['height'];
@@ -5116,13 +5124,16 @@
             });
             f['setSize'](d, e);
             f['autoClear'] = ![];
+            //创建容器
             this['_containerElm'] = document['createElement']('div');
             this['_containerElm']['style']['position'] = 'relative';
+            //添加视频元素
             var h = this['_videoDevice']['videoElement'];
             this['_containerElm']['appendChild'](h);
             h['style']['position'] = 'absolute';
+            //添加渲染元素
             var i = this['_renderer']['domElement'];
-            this['_containerElm']['appendChild'](i);
+            //this['_containerElm']['appendChild'](i);
             i['style']['position'] = 'absolute';
         }
         h(a, [{
@@ -5221,30 +5232,33 @@ var C = {
         } : 'enviroment'
     }
 };
-e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
-    console['log']('video\x20size' + e['videoWidth'] + '--' + e['videoHeight']);
-    console['log']('video\x20element\x20size' + e['width'] + '--' + e['height']);
-    var a = e['videoWidth'] / e['videoHeight'];
-    if (e['width'] < e['height']) {
-        e['width'] = e['height'] * a;
-    } else {
-        e['height'] = e['width'] / a;
+//这是把相机的资源重现到video元素中去
+//hen()方法是异步执行，就是当.then()前的方法执行完后再执行then()内部的程序
+e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](
+    function () {
+        console['log']('video\x20size' + e['videoWidth'] + '--' + e['videoHeight']);
+        console['log']('video\x20element\x20size' + e['width'] + '--' + e['height']);
+        var a = e['videoWidth'] / e['videoHeight'];
+        if (e['width'] < e['height']) {
+            e['width'] = e['height'] * a;
+        } else {
+            e['height'] = e['width'] / a;
+        }
+
+        e['play']()['then'](function () {
+
+            //domElement里包含视频和渲染元素。
+            var l = new SPAR[('THREERenderer')](e);
+            m['appendChild'](l['domElement']);
+
+            var C = (j - e['width']) / 0x2;
+            var x = (g - e['height']) / 0x2;
+            console['log']('offset=' + C + ',' + x);
+            l['domElement']['style']['marginLeft'] = C;
+            l['domElement']['style']['marginTop'] = x;
+        });
     }
-
-    e['play']()['then'](function () {
-
-        var l = new SPAR[('THREERenderer')](e);
-
-        m['appendChild'](l['domElement']);
-        var C = (j - e['width']) / 0x2;
-        var x = (g - e['height']) / 0x2;
-        console['log']('offset=' + C + ',' + x);
-        l['domElement']['style']['marginLeft'] = C;
-        l['domElement']['style']['marginTop'] = x;
-
-    });
-
-})['catch'](function (a) {
+)['catch'](function (a) {
     console['log']('\x20error', a);
     alert(a['name'] + ' : ' + a['message'] + '__载入失败');
 });
