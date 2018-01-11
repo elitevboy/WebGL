@@ -23,14 +23,14 @@ var e = new SPAR[('VideoDevice')]({
 
 
 var C = {
-    'audio': ![],
-    'video': {
-        'width': r,
-        'height': p,
-        'facingMode': c ? {
-            'exact': 'environment'
-        } : 'enviroment'
-    }
+    //'audio': ![],
+    //'video': {
+    //    'width': r,
+    //    'height': p,
+    //    'facingMode': c ? {
+    //        'exact': 'environment'
+    //    } : 'enviroment'
+    //}
 };
 e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
     console['log']('video\x20size' + e['videoWidth'] + '--' + e['videoHeight']);
