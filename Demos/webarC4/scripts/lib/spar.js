@@ -5133,7 +5133,7 @@
             h['style']['position'] = 'absolute';
             //Ìí¼ÓäÖÈ¾ÔªËØ
             var i = this['_renderer']['domElement'];
-            //this['_containerElm']['appendChild'](i);
+            this['_containerElm']['appendChild'](i);
             i['style']['position'] = 'absolute';
         }
         h(a, [{
