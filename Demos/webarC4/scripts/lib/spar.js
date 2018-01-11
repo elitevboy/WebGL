@@ -1,35 +1,6 @@
 
 
 
-(function(d,a){
-    var b = function() {
-        var a = !! [];
-        return function(d, b) {
-            var c = a ?
-            function() {
-                if (b) {
-                    var a = b['apply'](d, arguments);
-                    b = null;
-                    return a;
-                }
-            } : function() {};
-            a = ![];
-            return c;
-        };
-    }();
-	var c=b(this,function(){
-		var b=function(){return'\x64\x65\x76';},
-		c=function(){return'\x77\x69\x6e\x64\x6f\x77';};
-		var d=function(){var a=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return!a['\x74\x65\x73\x74'](b['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};
-		var e=function(){var a=new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');return a['\x74\x65\x73\x74'](c['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};
-		var a=function(a){var b=~-0x1>>0x1+0xff%0x0;if(a['\x69\x6e\x64\x65\x78\x4f\x66']('\x69'===b)){f(a);}};
-		var f=function(b){var c=~-0x4>>0x1+0xff%0x0;if(b['\x69\x6e\x64\x65\x78\x4f\x66']((!![]+'')[0x3])!==c){a(b);}};
-		if(!d()){if(!e()){a('\x69\x6e\x64\u0435\x78\x4f\x66');}else{a('\x69\x6e\x64\x65\x78\x4f\x66');}}else{a('\x69\x6e\x64\u0435\x78\x4f\x66');}});
-	c();
-
-	typeof exports === 'object' && typeof module !== 'undefined' ? module['exports'] = a() : typeof define === 'function' && define['amd'] ? define(a) : d['SPAR'] = a()
-}
-
 
 (this, function () {
 
