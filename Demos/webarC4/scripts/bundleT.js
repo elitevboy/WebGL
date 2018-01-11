@@ -67,7 +67,7 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
         };
 
 
-        var x = function () {
+        var xx = function () {
             function a(c, b) {
                 g(this, a);
                 this['_videoDevice'] = c;
@@ -134,7 +134,7 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
 
         //var l = new SPAR[('THREERenderer')](e);
 
-        var l = x(e);
+        var l = xx(e);
         m['appendChild'](l['domElement']);
         var C = (j - e['width']) / 0x2;
         var x = (g - e['height']) / 0x2;
