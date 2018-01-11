@@ -4383,10 +4383,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
                 } else throw Error('Chosen SHA variant is not supported');
                 E = v(F, A, d);
                 f = k(b);
-
-
-
-
                 this['setHMACKey'] = function (l, j, m) {
                     var n;
                     if (!0x0 === q) throw Error('HMAC key already set');
@@ -4505,12 +4501,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
                     return g(l);
                 };
             }
-
-
-
-
-
-
             function c(a, b) {
                 this['a'] = a;
                 this['b'] = b;
@@ -4562,10 +4552,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
                 if ('string' !== typeof b['b64Pad']) throw Error('Invalid b64Pad formatting option');
                 return b;
             }
-
-
-
-
             function v(b, c, a) {
                 switch (c) {
                     case 'UTF8':
@@ -4717,11 +4703,6 @@ var _0x24fc=function(b,f){b=b-0x0;var a=_0x4fc2[b];if(_0x24fc['initialized']===u
                 }
                 return b;
             }
-
-
-
-
-
             function g(a, b) {
                 return a << b | a >>> 0x20 - b;
             }
