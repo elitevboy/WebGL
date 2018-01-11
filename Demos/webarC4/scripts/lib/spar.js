@@ -5111,7 +5111,8 @@
             var j = this['_camera'] = new THREE['PerspectiveCamera'](b['cameraFOV'], b['cameraAspect'], b['cameraNear'], b['cameraFar']);
             j['position']['copy'](b['cameraPosition']);
             var f = this['_renderer'] = new THREE[('WebGLRenderer')]({
-                'alpha': ![]
+                //…Ë÷√±≥æ∞Õ∏√˜
+                'alpha': !![]
             });
             f['setSize'](d, e);
             f['autoClear'] = ![];
