@@ -18,28 +18,15 @@ var e = new SPAR[('VideoDevice')]({
     'height': g
 });
 
-var C = {
-    'audio': ![],
-    'video': {
-        'width': r,
-        'height': p,
-        'facingMode': c ? {
-            'exact': 'environment'
-        } : 'enviroment'
-    }
-};
-e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
-    console['log']('video\x20size' + e['videoWidth'] + '--' + e['videoHeight']);
-    console['log']('video\x20element\x20size' + e['width'] + '--' + e['height']);
-    var a = e['videoWidth'] / e['videoHeight'];
-    if (e['width'] < e['height']) {
-        e['width'] = e['height'] * a;
-    } else {
-        e['height'] = e['width'] / a;
-    }
 
-    e['play']()['then'](function () {
-        //var E = new THREE[('Clock')]();
+
+var l = new SPAR[('THREERenderer')](e);
+m['appendChild'](l['domElement']);
+var C = (j - e['width']) / 0x2;
+var x = (g - e['height']) / 0x2;
+console['log']('offset=' + C + ',' + x);
+l['domElement']['style']['marginLeft'] = C;
+l['domElement']['style']['marginTop'] = x;
 
 
 
@@ -47,22 +34,51 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
 
 
 
+//var C = {
+//    'audio': ![],
+//    'video': {
+//        'width': r,
+//        'height': p,
+//        'facingMode': c ? {
+//            'exact': 'environment'
+//        } : 'enviroment'
+//    }
+//};
+//e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
+//    console['log']('video\x20size' + e['videoWidth'] + '--' + e['videoHeight']);
+//    console['log']('video\x20element\x20size' + e['width'] + '--' + e['height']);
+//    var a = e['videoWidth'] / e['videoHeight'];
+//    if (e['width'] < e['height']) {
+//        e['width'] = e['height'] * a;
+//    } else {
+//        e['height'] = e['width'] / a;
+//    }
+
+//    e['play']()['then'](function () {
+//        //var E = new THREE[('Clock')]();
 
 
 
-        var l = new SPAR[('THREERenderer')](e);
-        m['appendChild'](l['domElement']);
-        var C = (j - e['width']) / 0x2;
-        var x = (g - e['height']) / 0x2;
-        console['log']('offset=' + C + ',' + x);
-        l['domElement']['style']['marginLeft'] = C;
-        l['domElement']['style']['marginTop'] = x;
 
-        //z['style']['display'] = 'none';
 
-    });
 
-})['catch'](function (a) {
-    console['log']('\x20error', a);
-    alert(a['name'] + ' : ' + a['message'] + '__载入失败');
-});
+
+
+
+
+//        var l = new SPAR[('THREERenderer')](e);
+//        m['appendChild'](l['domElement']);
+//        var C = (j - e['width']) / 0x2;
+//        var x = (g - e['height']) / 0x2;
+//        console['log']('offset=' + C + ',' + x);
+//        l['domElement']['style']['marginLeft'] = C;
+//        l['domElement']['style']['marginTop'] = x;
+
+//        //z['style']['display'] = 'none';
+
+//    });
+
+//})['catch'](function (a) {
+//    console['log']('\x20error', a);
+//    alert(a['name'] + ' : ' + a['message'] + '__载入失败');
+//});
