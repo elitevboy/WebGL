@@ -6,10 +6,10 @@ var c = ![];
 
 var r = 0x140;  //320
 var p = 0xf0;  //240
-//if (SPAR['browser']['ios']) {
-//    r = 0x280;  //640  0x280
-//    p = 0x1e0;  //480  0x1e0
-//}
+if (SPAR['browser']['ios']) {
+    r = 0x280;  //640  0x280
+    p = 0x1e0;  //480  0x1e0
+}
 var j = window['innerWidth'];
 var g = window['innerHeight'];
 //console['log']('VideoDevice\x20' + j + ',' + g);
