@@ -7,8 +7,8 @@ var c = ![];
 var r = 0x140;  //320
 var p = 0xf0;  //240
 if (SPAR['browser']['ios']) {
-    r = 0x0;  //640  0x280
-    p = 0x0;  //480  0x1e0
+    r = 0x280;  //640  0x280
+    p = 0x1e0;  //480  0x1e0
 }
 var j = window['innerWidth'];
 var g = window['innerHeight'];
@@ -17,12 +17,6 @@ var e = new SPAR[('VideoDevice')]({
     'width': j,
     'height': g
 });
-
-
-
-
-
-
 
 
 
@@ -48,14 +42,6 @@ e['setVideoSource'](new SPAR[('CameraVideoSource')](C))['then'](function () {
 
     e['play']()['then'](function () {
         //var E = new THREE[('Clock')]();
-
-
-
-
-
-
-
-
 
 
         var l = new SPAR[('THREERenderer')](e);
